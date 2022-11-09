@@ -90,3 +90,25 @@
 .col-8 h2{
   margin-top: 5px;
 }
+
+/* Background */
+.div_background{
+  margin: 15px; 
+  width: 550px; 
+  height: 220px; 
+  background-color: white;
+}
+
+.list_background{
+  list-style-type: none; 
+  font-size: 19px;
+  list-style-position:inside;
+  margin:0;
+  padding:0; 
+}
+
+.link_doc {
+  color: black;
+  text-decoration: underline;
+  padding: 0px;
+}
