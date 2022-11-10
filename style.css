@@ -15,8 +15,9 @@
 }
 
 .line1{
-  height: 3px;
-  background: #a6a6a6;
+  height: 2px;
+  background: black;
+  /* background: #a6a6a6; */
   margin-bottom: 2px;
   margin: 0 auto;
 }
@@ -29,8 +30,9 @@
 
 
 .big_line1{
-  height: 3px;
-  background: #a6a6a6;
+  height: 2px;
+  background: black;
+  /* background: #a6a6a6; */
   margin-bottom: 2px;
 }
 
@@ -81,6 +83,7 @@
 
 .col-8 {
   margin-top: 60px;
+  text-align: left;
 }
 
 .col-8 h1{
@@ -97,6 +100,15 @@
   width: 550px; 
   height: 220px; 
   background-color: white;
+}
+
+.title{
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+.date{
+  margin-bottom: 10px;
+  font-family: Consolas;
 }
 
 .list_background{
