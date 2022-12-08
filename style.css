@@ -28,6 +28,12 @@
   margin: 0 auto;
 }
 
+.line3{
+  height: 3px;
+  background: black;
+  margin: 0 auto;
+}
+
 
 .big_line1{
   height: 2px;
@@ -40,6 +46,31 @@
   height: 1px;
   background: black;
 }
+
+.main_title{
+  height: 250px;
+  position: relative;
+}
+
+.main_title_text{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.main_title_text h1{
+  font-size: 65px;
+}
+
+.main_title_text h2{
+  margin-top: 20px ;
+  font-size: 35px;
+}
+
+
 
 /* navegation bar */
 .navitem {
@@ -82,7 +113,6 @@
 }
 
 .col-8 {
-  margin-top: 60px;
   text-align: left;
 }
 
