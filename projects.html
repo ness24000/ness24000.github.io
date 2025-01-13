@@ -1,201 +1,1031 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <title> Nestor's website</title>
-    <link rel = 'stylesheet' href = 'style.css'>
-  </head>
-  <body>
-    <div class="main">
-      Néstor Narbona Chulvi
-    </div>
-    <div style="margin-left: 100px;margin-right: 100px;">
-      <div class = 'big_line1'></div>
-    </div>
-    <div style="text-align: center">
-      <nav>
-        <ul id = 'navbar'>
-          <li class = 'navitem'> <a href="index.html"> Home </a> </li>
-          <li class = 'navitem'> <a href="background.html"> Background & experience </a> </li>
-          <li class = 'navitem'> <a href="projects.html"> Projects </a> </li>
-          <!-- <li class = 'navitem'> <a href="skills.html"> Skills </a> </li> -->
-        </ul>
-      </nav>
-    </div>
-    <div style="margin-left: 100px;margin-right: 100px;">
-      <div class = 'big_line2'></div>
-    </div>
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-01-13 Mon 18:55 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>My projects</title>
+<meta name="generator" content="Org Mode" />
+<style type='text/css'>
+<!--/*--><![CDATA[/*><!--*/
+h2::before { content: '';
+margin-right: calc(0 * 0.22em);
+}
+h3::before { content: '';
+margin-right: calc(0 * 0.23em);
+}
+h4::before { content: '';
+margin-right: calc(0 * 0.24em);
+}
+h5::before { content: '';
+margin-right: calc(0 * 0.25em);
+}
+h6::before { content: '';
+margin-right: calc(0 * 0.26em);
+}
+h2 {
+    font-size: 130%;
+}
 
-    <div class="container">
-      <div class="row">
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-    
-              <div style="margin-bottom: 0px;margin-top: 30px; font-size: 38px;"> 
-                Major projects
-                <div class="line3" style="margin-bottom: 20px; width: 50px; margin-left: 0px;"></div>
-              </div>
+h3 {
+    font-size: 100%;
+}
 
-              <div class="project_div"> 
-                <strong class = 'project_title'> Modeling information diffusion in empirical and theoretical social networks</strong>
-                <p class="date"> Network analysis | JAN 2023 -  Present </p>
-                 <p class = 'project_par'> 
-                  The correspondence between the Barabási-Albert (BA) model and empirical social networks has long been accepted for metrics such as degree distribution 
-                  or clustering coefficient. Nevertheless, to our knowledge the validity of this network model has not been tested in the context of information 
-                  diffusion (i.e. the spread of ideas among interacting social agents). In the present work we compare different information spread metrics (e.g. reach, 
-                  speed, characteristic of influential nodes) between the BA model and an empirical Facebook social network, assuming information spread via different models. The correspondence will be evaluated 
-                  by means of different error measurements and significance tests. 
-                 </p>  
-                 <p class="project_par">
-                  Checks the project's<a href="https://github.com/DiederikPC/project-computational-science.git" class = 'link_doc'> Github </a>. 
-                 </p>
-             </div>
 
-            <div style="width: 20px; height: 25px"> </div>
+/* for the header */
 
-              <div class="project_div"> 
-                <strong class = 'project_title'> Stock value prediction based on sentiment analysis of financial articles</strong>
-                <p class="date"> NLP, Time series & APIs | NOV 2022 - DEC 2022</p>
-                 <p class = 'project_par'> The project attempted to answer the research question: does the prediction of stock value improve 
-                  when using information about sentiment on financial articles referring to the stock? The research involved three phases. First,
-                  a sentiment analysis was performed on a dataset of articles involving different companies. A dictionary-based and pre-trained machine 
-                  learning algorithms were tested, and the former proved more efficient and accurate. The quality of the measure was tested by performing 
-                  bootstrap significance testing on the difference between the measured sentiment and the 'actual' manually annotated one, for a random sample of 
-                  20 articles. Although most differences were significant, a correlation showed a high value and a high bootstrap significance. Secondly, a vector 
-                  autoregression model (VAR) was fitted to the data. This involved linking two time series for each company: daily stock data and daily sentiment data.
-                  After fixing the stationarity of the stock data, the fit of the model was evaluated using traditional measures such as RMSE, AIC and significance of
-                  coefficients. The third step involved a more sophisticated evaluation of the goodness of fit. We fitted a second model that only involved historical 
-                  stock data: a autoregressive model (AR). We performed equivalent steps and used identical data, simply in a univariate test. Finally, we used 
-                  both trained models to predict 14 days ahead (from the end of the data set), and computed the RMSE and its bootstrap confidence interval. We 
-                  concluded that for none of the companies introducing information about sentiment in corresponding financial articles improved the prediction of 
-                  stock value.
-                 </p>  
-                 <p class="project_par">
-                  Code is available in the following <a href = 'https://github.com/DerkNiessink/Project_SDA' class = 'link_doc' style = 'margin:0px;'>GitHub page</a>. 
-                 </p>
-             </div>
+/* Style the header with a grey background and some padding */
+.header {
+    /* ho */
+    overflow: hidden;
+    padding: 20px 10px;
+}
 
-            <div style="width: 20px; height: 25px"> </div>
+/* Style the header links */
+.header a {
+    float: left;
+    color: var(--clr);
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+}
 
-              <div class="project_div"> 
-                 <strong class = 'project_title'>Interactive map of drug consumption in the European Union</strong>
-                 <p class="date"> Data visualization | SEP 2022</p>
-                  <p class = 'project_par'> I crated an interactive choropleth map of the European Union where one can 
-                    quickly see what was the last month prevalence for different drugs (e.g. cannabis, alcohol, cocaine, 
-                    tobacco). Data comes from the European Monitoring Centre for Drugs and Drug Addiction's (EMCDD) 
-                    <a href="https://www.emcdda.europa.eu/data/stats2022/gps_en" class = 'link_doc' style="margin: 0px;"> 
-                      2022 Statistical Bulletin</a>. The visualization was crated using Plotly and Plotly Dash. Some extra features 
-                    include sample size information and survey year. This appears one hovers over a country. 
-                  </p>  
-                  <p class="project_par">
-                    To see the code, documentation and the accompanying report visit <a href="https://github.com/ness24000/1Repository.git" class = 'link_doc', 
-                    style = 'margin:0px;'> this GitHub repository</a>. To see a quick preview <a href="images/Map.gif" class = 'link_doc' style = 'margin:0px;'>click here</a>.         
-                  </p>
-              </div>
+.header a.title{
+    font-weight: bold;
+}
 
-             <div style="width: 20px; height: 25px"> </div>
+/* Change the background color on mouse-over */
+.header a:hover {
+    color: pink;
+}
 
-              <div class="project_div"> 
-                <strong class = 'project_title'> Measuring political involvement in Twitter
-                  using SVM and followers network </strong>
-                <p class="date"> Data analysis, Machine learning, NLP & APIs | JAN 2022 - JUN 2022</p>
-                <p class = 'project_par'> The results from my bachelor thesis did not correspond to expectations (see below). 
-                  Reflecting on possible reasons behind it, the measurement of political attitudes seemed to be a good candidate
-                  for further improvement. A careful application of a dictionary-based Sentiment Analysis coupled with Name Entity Recognition, seemed 
-                  to have fail at capturing users' political attitude. Specifically, it seemed to average out extreme opinions of single users. The improvement 
-                  involved separating the measurement of the opinion's polarity from the measurement of its strength. The former was assessed using a pre-trained Support Vector Machine 
-                  classifying posts as pro or against the political ideology, based on their network of Twitter followers and followings. The latter measurement involved sentiment analysis in 
-                  absolute terms (i.e. 0 = weak opinion; 5 = very strong opinion). The same analysis as in the bachelor thesis was performed using this new metric. 
-                  Results show that the new measurement solved the problem the previous method showed, and political attitudes distributions were indeed showing bimodality. 
-                  Nevertheless, no increase in the extremity of this bimodality as a function of political involvement was observed. </p>
-                  <p class = 'project_par'> The <a href="documents/research_internship.pdf" class="link_doc" style="margin: 0px;">full report</a> contains more information about the rationale behind the decision and the methods used. 
-                  </p>
-             </div>
+/* Float the link section to the right */
+.header-right {
+    float: right;
+}
 
-             <div style="width: 20px; height: 25px"> </div>
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 750px) {
+    .header a {
+	float: none;
+	display: block;
+	text-align: left;
+    }
+    .header a.title{
+	clear: right;
+    }
+    .header-right {
+	float: none;
+    }
+}
 
-              <div class="project_div"> 
-                <strong class = 'project_title'> Link between political involvement and polarization in social media</strong>
-                <p class="date"> Data analysis, NLP & APIs | NOV 2021 - JAN 2022</p>
-                 <p class = 'project_par'> This was my Bachelor's Thesis project entitled: <i style="margin: 0px;">Using Social Media Analytics to Explore Political 
-                  Involvement and Polarization: Challenges and New Insight</i>. It go awarded a 9. Here is the abstract:             
-                  <i style="margin: 0px;"> "When applied to political attitudes, the Cusp Catastrophe model predicts that people with a high
-                    political involvement will hold extreme political attitudes (i.e. will be more polarized). We tested
-                    this prediction by fitting a Cusp Catastrophe model to data regarding political involvement and
-                    attitude towards Joe Biden, obtained using Twitter Analytics and Natural Language Processing.
-                    Political involvement was measured using a dictionary approach: how many of a user’s last 100
-                    posts contained ‘political terms’ and thus could be considered political. Attitude towards Joe Biden
-                    was measured by performing a Sentiment Analysis on those posts in which the user mentioned only
-                    Joe Biden and no other political/social figure (this filtering was accomplished using Name Entity
-                    Recognition). The Cusp Catastrophe model showed a poor fit to this data, pointing at political
-                    involvement being unrelated to extremity of political attitudes."</i> 
-                  </p>
+/* nice-org-html.css
+;;==============================================================================
+;; Copyright (C) 2024, Ewan Townshend
 
-                  <p class="project_par">
-                    To see data sets, code and full report visit <a href="https://github.com/ness24000/Thesis-Project-Psychological-Methods-and-Statistics.git" 
-                    class="link_doc" style="margin:0px;"> this GitHub repository.</a>  
-                  </p>
-                    
+;; Author: Ewan Townshend
+;; URL: https://github.com/ewantown/nice-org-html
+;; Version: 1.2
 
-             </div>
+;;==============================================================================
+;; This program is free software; you can redistribute it and/or modify
+;; it under the terms of the GNU General Public License as published by
+;; the Free Software Foundation, either version 3 of the License, or
+;; (at your option) any later version.
 
-             <div style="width: 20px; height: 25px"> </div>
+;; This program is distributed in the hope that it will be useful,
+;; but WITHOUT ANY WARRANTY; without even the implied warranty of
+;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+;; GNU General Public License for more details.
 
-             <div class="project_div"> 
-               <strong class = 'project_title'> Evaluating Spotify's song valence metric</strong>
-               <p class="date"> Data analysis, Data collection & API | OCT 2021 - JAN 2022</p>
-                <p class = 'project_par'> 
-                  This study evaluates the correspondence between songs' objective valence judgement (i.e. Spotify's valence metric) and 
-                  subjective happiness ratings (i.e. measured using a questionnaire). Additionally, many studies have shown that musical 
-                  sophistication has an effect on the relationship between objective and subjective musical perception (Castro & Lima, 2014).
-                   We will examine whether the level of expertise in music will impact musical perception in the context of valence, leading to
-                    the following research question: To what extent does objective valence judgement predict subjective happiness ratings and to what extent is this relationship moderated by music sophistication? 
-                  I was in charge of the data cleaning and analysis process, as well as the data visualization. I tested the main hypothesis of 
-                  both valence metrics being related applying a Simple Linear Regression. I evaluated wether music sophistication altered this 
-                  relationship using a Moderation Analysis. We also wanted to test whether participants with a higher musical sophistication 
-                  'agreed more' on the valence judgement of songs. I tested this using Levene's test on each song. </p>
-                <p class = 'project_par'> 
-                  All these tests, the rationale behind them, testing of assumptions, and visualization and interpretation of results can be seen in the 
-                  following <a href="https://jctubio.github.io/musical-feelings/#hypothesis-3" class="link_doc" style="margin:0px;">website</a>.  
-                </p>
-            </div>
+;; You should have received a copy of the GNU General Public License
+;; along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-            <div class="project_div"> 
-              <strong class = 'project_title'> Dimensionality and reliability of an original questionnaire </strong>
-              <p class="date"> Data analysis & Data collection| FEB - MARCH 2022 </p>
-               <p class = 'project_par'> This project involved following a very common method of questionnaire construction and validation in Psychology. 
-                We attempted to create a measurement of a person's general mistrust tendency. This effort was grounded in previous literature, which lead to
-                the segmentation of the questionnaire in different 'dimensions' for different aspects of mistrust. Thus, a way of evaluating the questionnaire 
-                was to perform a confirmatory factor analysis (i.e. similar to PCA) and test if items linked to a same dimension of mistrust clustered together. 
-               </p>
-              </div>
-              
+;; This file is not part of emacs.
 
-            <div style="margin-bottom: 0px;margin-top: 30px; font-size: 38px;"> 
-              Minor projects
-              <div class="line3" style="margin-bottom: 20px; width: 50px; margin-left: 0px;"></div>
-            </div>
+;;==============================================================================
+*/
 
-            <div class="project_div"> 
-              <strong class = 'project_title'> Visualizing restaurant ratings </strong>
-              <p class="date"> Data visualization & Data transformation | AUG 2022 </p>
-               <p class = 'project_par'> The clarity and aesthetics of visualizations are rarely valued in 
-                scientific education. Thus I spend some free time improving this aspects of my visualization skills. 
-                This summer my family and I (i.e. the Chulvi family) decided to do a small gastronomic around our hometown
-                (i.e. Valencia, Spain). We evaluated restaurants based on different criteria which, in turn, had different weights. 
-                By the end of the tour, having gathered this data, I decided to create a small visualization. The goal was, not only
-                to be able to tell what restaurant, but to also see what criteria each restaurant excelled/failed at. This would also allow
-                the reader to make an informed decision, in case he was most interested in one criteria (e.g. food quality) than another (e.g. service quality).</p>
-              <p class="project_par">
-                The resulting visualization can be seen <a href="images/plot_rest.png" class="link_doc" style="margin:0px;">here</a>.
-               </p>
-           </div>
+/* basic layout ***************************************************************/
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+html {
+    font-family: Sans;
+    line-height: 1.3;
+    font-size: calc(15px + 0.390625vw);
+    -webkit-text-size-adjust: 100%;
+}
 
-           <div style="width: 20px; height: 25px"> </div>   
+body {
+    background: #999; /* overwritten with theme --bg */
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family:
+	system-ui,
+	-apple-system,
+	'Segoe UI',
+	Roboto,
+	Helvetica,
+	Arial,
+	sans-serif,
+	'Apple Color Emoji',
+	'Segoe UI Emoji';
+}
 
-      </div>
-    </div>
-  </body>
+#preamble,
+#postamble {
+    width: 100%;
+}
+
+#content {
+    width: 80%;
+    max-width: 80ch;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    flex: 1;
+}
+
+/* custom facing **************************************************************/
+/* The variable values are injected by CSS pre-processing in et-org-html.el */
+:root {
+  --bc-tb: #383a42;
+  --bc-block: initial;
+  --clr: #383a42;
+  --clr-tb-hd: initial;
+  --clr-code: initial;
+  --bg: #fafafa;
+  --bg-code: #f0f0f1;
+  --bg-tb-hd: #f0f0f1;
+  --bg-block: initial;
+  --clr-link: #008B8B;
+  --clr-title: #383a42;
+  --clr-todo: #50a14f;
+  --bg-todo: initial;
+  --clr-done: #a0a1a7;
+  --bg-done: initial;
+  --ts-clr: #a626a4;
+  --mg: 20px;
+  --w-toc: 300px;
+  --bg-keyword: initial;
+  --clr-keyword: #a626a4;
+  --bg-constant: initial;
+  --clr-constant: #008B8B;
+  --bg-comment: initial;
+  --clr-comment: #a0a1a7;
+  --bg-comment-delimiter: initial;
+  --clr-comment-delimiter: initial;
+  --bg-function: initial;
+  --clr-function: #0184bc;
+  --bg-variable: initial;
+  --clr-variable: #8B4513;
+  --bg-preprocessor: initial;
+  --clr-preprocessor: initial;
+  --bg-doc: initial;
+  --clr-doc: initial;
+  --bg-builtin: initial;
+  --clr-builtin: #e44649;
+  --bg-string: initial;
+  --clr-string: #50a14f;
+}
+
+body[data-mode='light'] {
+  background: var(--bg);
+  color: var(--clr);
+}
+
+body[data-mode='dark'] {
+  background: var(--bg);
+  color: var(--clr);
+  --bc-tb: #FF0000;
+  --bc-block: initial;
+  --clr: #F5F5F5;
+  --clr-code: initial;
+  --clr-tb-hd: initial;
+  --bg: #333333;
+  --bg-tb-hd: #4D4D4D;
+  --bg-code: #4D4D4D;
+  --bg-block: initial;
+  --clr-link: #1E90FF;
+  --clr-title: #F5F5F5;
+  --clr-todo: #FFA07A;
+  --bg-todo: initial;
+  --clr-done: #CD853F;
+  --bg-done: initial;
+  --ts-clr: #20B2AA;
+  --mg: 20px;
+  --w-toc: 300px;
+  --bg-keyword: initial;
+  --clr-keyword: #20B2AA;
+  --bg-constant: initial;
+  --clr-constant: #1E90FF;
+  --bg-comment: initial;
+  --clr-comment: #CD853F;
+  --bg-comment-delimiter: initial;
+  --clr-comment-delimiter: initial;
+  --bg-function: initial;
+  --clr-function: #00FF7F;
+  --bg-variable: initial;
+  --clr-variable: #9ACD32;
+  --bg-preprocessor: initial;
+  --clr-preprocessor: #6495ED;
+  --bg-doc: initial;
+  --clr-doc: #CD5C5C;
+  --bg-builtin: initial;
+  --clr-builtin: #76EE00;
+  --bg-string: initial;
+  --clr-string: #FFA07A;
+}
+
+
+/* ootb page layout ***********************************************************/
+#view-controls {
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--bg);
+    color: var(--clr-code);
+    height: 2.5rem;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    z-index: 100;
+    border-radius: 5px; /* Rounded corners */
+}
+#toggle-mode {
+    position: absolute;
+    right: 5%;
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+    background: var(--bg);
+    color: var(--clr-code);
+    padding: 0.25rem 0;
+}
+#goto-top {
+    display: none;
+}
+#goto-top[data-show="true"] {
+    position: relative;
+    display: block;
+    text-align: center;
+    font-size: 1rem;
+    background: var(--bg);
+    color: var(--clr-code);
+    padding: 0.25rem 0;
+}
+#toggle-toc {
+    display: none;
+}
+#toggle-toc[data-show="true"] {
+    position: absolute;
+    left: 5%;
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+    background: var(--bg);
+    color: var(--clr-code);
+    padding: 0.25rem 0;
+}
+
+#toggle-toc:hover,
+#goto-top:hover,
+#toggle-mode:hover {
+    cursor: pointer;
+}
+
+#table-of-contents {
+    display: none;
+}
+#table-of-contents[data-show="true"] {
+    width: 80%;
+    max-width: 80rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    background: var(--bg);
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+#table-of-contents::-webkit-scrollbar {
+  display: none;
+}
+
+body[data-toc="true"] #content * {
+    display: none;
+}
+body[data-toc="true"] #content #table-of-contents,
+body[data-toc="true"] #content #table-of-contents * {
+    display: block;
+}
+
+
+/* misc elements **************************************************************/
+
+hr {
+	height: 0;
+	color: inherit;
+}
+
+b,
+strong {
+	font-weight: bolder;
+}
+
+code,
+kbd,
+samp,
+pre {
+    font-family:
+	Menlo,
+	ui-monospace,
+	SFMono-Regular,
+	Consolas,
+	'Liberation Mono',
+	monospace;
+}
+
+small {
+	font-size: 80%;
+}
+
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sub {
+	bottom: -0.25em;
+}
+
+sup {
+	top: -0.5em;
+}
+
+table {
+	text-indent: 0;
+	border-color: inherit;
+}
+
+summary {
+	display: list-item;
+}
+
+h1 {
+  color: var(--clr-title);
+  text-align: center;
+}
+h2, h3, h4, h5, h6, h7 {
+  font-family: Sans Serif;
+}
+h2 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+code {
+  color: var(--clr-code);
+  background: var(--bg-code);
+  border-radius: 2px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+pre {
+    padding: 1rem;
+    border: 1px solid var(--bc-block);
+    border-radius: 0.5rem;
+    background: var(--bg-block);
+    font-size: 0.9rem;
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: thin;
+}
+
+pre::-webkit-scrollbar {
+  display: none;
+}
+
+.todo {
+  color: var(--clr-todo);
+  background: var(--bg-todo);
+}
+
+.done {
+  color: var(--clr-done);
+  background: var(--bg-done);
+}
+
+.timestamp-wrapper {
+  font-size: 0.8rem;
+  color: var(--clr-ts);
+}
+
+table {
+  width: 100%;
+  border: 2px solid var(--bc-tb);
+}
+
+thead {
+  color: var(--clr-tb-hd);
+  background: var(--bg-tb-hd);
+}
+
+td, th {
+  border: thin solid var(--bc-tb);
+}
+
+li {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+#text-table-of-contents li a:before {
+    content: "• "
+}
+
+a {
+  text-decoration: none;
+  color: var(--clr-link);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.MathJax_Display {
+  font-size: 1.25em;
+}
+
+img {
+  max-width: 100%;
+}
+
+.org-src-wrapper {
+  position: relative;
+}
+
+.org-src-wrapper .org-src-container {
+    position: relative;
+    border: 1px solid var(--bc-block);
+    border-radius: 0.5rem;
+    background: var(--bg-code);
+}
+
+.org-src-wrapper .org-src-container:has(+ .copyBtn) pre {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.org-src-wrapper .srcBtnBar {
+    width: 100%;
+    background: transparent;
+    position: relative;
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.org-src-wrapper .copyBtn {
+  position: absolute;
+  top: 0rem;
+  right: 0rem;
+  background-color: transparent;
+  color: var(--clr-doc);
+  border: none;
+  padding: 0.5rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 0.8rem;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: opacity 0.3s;
+}
+
+.org-src-wrapper .copyBtn:hover {
+  opacity: 1;
+}
+
+.org-src-wrapper .copyBtn i {
+    margin-right: 0.5rem;
+    padding: 0.5rem;
+}
+
+
+/* responsive layouts *********************************************************/
+
+@media only screen and (max-width: 768px) {
+    #toggle-toc[data-show='true'] {
+	padding-right: 5%;
+    }
+    #toggle-mode {
+	padding-left: 5%;
+    }
+    #content {
+	width: 90%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #view-controls {
+	padding-top: 1.5em;
+	padding-bottom: 1.5em;
+    }
+    #toggle-toc[data-show='true'] {
+	padding-right: 5%;
+    }
+    #toggle-mode {
+	padding-left: 5%;
+    }
+    #content {
+	width: 90%;
+    }
+}
+
+/*]]>*/-->
+</style>
+</head>
+<body>
+<div id="preamble" class="status">
+<div id='injected-header' class='injected'><div class="header">
+  <a href="index.html" class="title">Website::Néstor Narbona Chulvi</a>
+  <div class="header-right">
+    <a href="index.html">Home</a>
+    <a href="background.html">Background</a>
+    <a href="projects.html">Projects</a>
+    <a href="documents/cv.pdf">CV</a>
+  </div>
+</div>
+</div><div id='view-controls'><div id='toggle-mode' title='Mode'>&#9788;</div><div id='goto-top' title='Top'>&#8963;</div><div id='toggle-toc' title='Contents'>&#9776;</div></div>
+</div>
+<div id="content" class="content">
+<h1 class="title">My projects</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org21d81fe">Major projects</a>
+<ul>
+<li><a href="#orgf3fe30d">Modeling information diffusion in empirical and theoretical social networks</a></li>
+<li><a href="#orgaf58129">Stock value prediction based on sentiment analysis of financial articles</a></li>
+<li><a href="#orgfbf3dbf">Interactive map of drug consumption in the European Union</a></li>
+<li><a href="#org2f0144f">Measuring political involvement in Twitter using SVM and followers network</a></li>
+<li><a href="#org5a267f8">Link between political involvement and polarization in social media</a></li>
+<li><a href="#orgb931d0a">Evaluating Spotify's song valence metric</a></li>
+<li><a href="#org56d34eb">Dimensionality and reliability of an original questionnaire</a></li>
+</ul>
+</li>
+<li><a href="#org1dfc56c">Minor projects</a>
+<ul>
+<li><a href="#orge94287d">Visualizing restaurant ratings</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org21d81fe" class="outline-2">
+<h2 id="org21d81fe">Major projects</h2>
+<div class="outline-text-2" id="text-org21d81fe">
+</div>
+<div id="outline-container-orgf3fe30d" class="outline-3">
+<h3 id="orgf3fe30d">Modeling information diffusion in empirical and theoretical social networks</h3>
+<div class="outline-text-3" id="text-orgf3fe30d">
+<p>
+<code>pytest</code> <code>SQL</code>
+</p>
+
+<p>
+Network analysis | JAN 2023 - Present
+</p>
+
+<p>
+The correspondence between the Barabási-Albert (BA) model and
+empirical social networks has long been accepted for metrics such as
+degree distribution or clustering coefficient. Nevertheless, to our
+knowledge the validity of this network model has not been tested in
+the context of information diffusion (i.e. the spread of ideas among
+interacting social agents). In the present work we compare different
+information spread metrics (e.g. reach, speed, characteristic of
+influential nodes) between the BA model and an empirical Facebook
+social network, assuming information spread via different models. The
+correspondence will be evaluated by means of different error
+measurements and significance tests.
+</p>
+
+<p>
+Checks the project's <a href="https://github.com/DiederikPC/project-computational-science.git">Github</a> .
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgaf58129" class="outline-3">
+<h3 id="orgaf58129">Stock value prediction based on sentiment analysis of financial articles</h3>
+<div class="outline-text-3" id="text-orgaf58129">
+<p>
+NLP, Time series &amp; APIs | NOV 2022 - DEC 2022
+</p>
+
+<p>
+The project attempted to answer the research question: does the
+prediction of stock value improve when using information about sentiment
+on financial articles referring to the stock? The research involved
+three phases. First, a sentiment analysis was performed on a dataset of
+articles involving different companies. A dictionary-based and
+pre-trained machine learning algorithms were tested, and the former
+proved more efficient and accurate. The quality of the measure was
+tested by performing bootstrap significance testing on the difference
+between the measured sentiment and the 'actual' manually annotated one,
+for a random sample of 20 articles. Although most differences were
+significant, a correlation showed a high value and a high bootstrap
+significance. Secondly, a vector autoregression model (VAR) was fitted
+to the data. This involved linking two time series for each company:
+daily stock data and daily sentiment data. After fixing the stationarity
+of the stock data, the fit of the model was evaluated using traditional
+measures such as RMSE, AIC and significance of coefficients. The third
+step involved a more sophisticated evaluation of the goodness of fit. We
+fitted a second model that only involved historical stock data: a
+autoregressive model (AR). We performed equivalent steps and used
+identical data, simply in a univariate test. Finally, we used both
+trained models to predict 14 days ahead (from the end of the data set),
+and computed the RMSE and its bootstrap confidence interval. We
+concluded that for none of the companies introducing information about
+sentiment in corresponding financial articles improved the prediction of
+stock value.
+</p>
+
+<p>
+Code is available in the following <a href="https://github.com/DerkNiessink/Project_SDA">GitHub page</a>.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgfbf3dbf" class="outline-3">
+<h3 id="orgfbf3dbf">Interactive map of drug consumption in the European Union</h3>
+<div class="outline-text-3" id="text-orgfbf3dbf">
+<p>
+Data visualization | SEP 2022
+</p>
+
+<p>
+I crated an interactive choropleth map of the European Union where one
+can quickly see what was the last month prevalence for different drugs
+(e.g. cannabis, alcohol, cocaine, tobacco). Data comes from the European
+Monitoring Centre for Drugs and Drug Addiction's (EMCDD)
+<a href="https://www.emcdda.europa.eu/data/stats2022/gps_en">2022 Statistical
+Bulletin</a>. The visualization was crated using Plotly and Plotly Dash.
+Some extra features include sample size information and survey year.
+This appears one hovers over a country.
+</p>
+
+<p>
+To see the code, documentation and the accompanying report visit
+<a href="https://github.com/ness24000/1Repository.git">this GitHub
+repository</a>. To see a quick preview <a href="images/Map.gif">click
+here</a>.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org2f0144f" class="outline-3">
+<h3 id="org2f0144f">Measuring political involvement in Twitter using SVM and followers network</h3>
+<div class="outline-text-3" id="text-org2f0144f">
+<p>
+Data analysis, Machine learning, NLP &amp; APIs | JAN 2022 - JUN 2022
+</p>
+
+<p>
+The results from my bachelor thesis did not correspond to expectations
+(see below). Reflecting on possible reasons behind it, the measurement
+of political attitudes seemed to be a good candidate for further
+improvement. A careful application of a dictionary-based Sentiment
+Analysis coupled with Name Entity Recognition, seemed to have fail at
+capturing users' political attitude. Specifically, it seemed to average
+out extreme opinions of single users. The improvement involved
+separating the measurement of the opinion's polarity from the
+measurement of its strength. The former was assessed using a pre-trained
+Support Vector Machine classifying posts as pro or against the political
+ideology, based on their network of Twitter followers and followings.
+The latter measurement involved sentiment analysis in absolute terms
+(i.e. 0 = weak opinion; 5 = very strong opinion). The same analysis as
+in the bachelor thesis was performed using this new metric. Results show
+that the new measurement solved the problem the previous method showed,
+and political attitudes distributions were indeed showing bimodality.
+Nevertheless, no increase in the extremity of this bimodality as a
+function of political involvement was observed.
+</p>
+
+<p>
+The <a href="documents/research_internship.pdf">full report</a> contains
+more information about the rationale behind the decision and the methods
+used.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org5a267f8" class="outline-3">
+<h3 id="org5a267f8">Link between political involvement and polarization in social media</h3>
+<div class="outline-text-3" id="text-org5a267f8">
+<p>
+Data analysis, NLP &amp; APIs | NOV 2021 - JAN 2022
+</p>
+
+<p>
+This was my Bachelor's Thesis project entitled: <i>Using Social Media
+Analytics to Explore Political Involvement and Polarization: Challenges
+and New Insight</i>. It go awarded a 9. Here is the abstract: <i>"When
+applied to political attitudes, the Cusp Catastrophe model predicts that
+people with a high political involvement will hold extreme political
+attitudes (i.e. will be more polarized). We tested this prediction by
+fitting a Cusp Catastrophe model to data regarding political involvement
+and attitude towards Joe Biden, obtained using Twitter Analytics and
+Natural Language Processing. Political involvement was measured using a
+dictionary approach: how many of a user's last 100 posts contained
+‘political terms' and thus could be considered political. Attitude
+towards Joe Biden was measured by performing a Sentiment Analysis on
+those posts in which the user mentioned only Joe Biden and no other
+political/social figure (this filtering was accomplished using Name
+Entity Recognition). The Cusp Catastrophe model showed a poor fit to
+this data, pointing at political involvement being unrelated to
+extremity of political attitudes."</i>
+</p>
+
+<p>
+To see data sets, code and full report visit
+<a href="https://github.com/ness24000/Thesis-Project-Psychological-Methods-and-Statistics.git">this
+GitHub repository.</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb931d0a" class="outline-3">
+<h3 id="orgb931d0a">Evaluating Spotify's song valence metric</h3>
+<div class="outline-text-3" id="text-orgb931d0a">
+<p>
+Data analysis, Data collection &amp; API | OCT 2021 - JAN 2022
+</p>
+
+<p>
+This study evaluates the correspondence between songs' objective valence
+judgement (i.e. Spotify's valence metric) and subjective happiness
+ratings (i.e. measured using a questionnaire). Additionally, many
+studies have shown that musical sophistication has an effect on the
+relationship between objective and subjective musical perception (Castro
+&amp; Lima, 2014). We will examine whether the level of expertise in music
+will impact musical perception in the context of valence, leading to the
+following research question: To what extent does objective valence
+judgement predict subjective happiness ratings and to what extent is
+this relationship moderated by music sophistication? I was in charge of
+the data cleaning and analysis process, as well as the data
+visualization. I tested the main hypothesis of both valence metrics
+being related applying a Simple Linear Regression. I evaluated wether
+music sophistication altered this relationship using a Moderation
+Analysis. We also wanted to test whether participants with a higher
+musical sophistication 'agreed more' on the valence judgement of songs.
+I tested this using Levene's test on each song.
+</p>
+
+<p>
+All these tests, the rationale behind them, testing of assumptions, and
+visualization and interpretation of results can be seen in the following
+<a href="https://jctubio.github.io/musical-feelings/#hypothesis-3">website</a>.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org56d34eb" class="outline-3">
+<h3 id="org56d34eb">Dimensionality and reliability of an original questionnaire</h3>
+<div class="outline-text-3" id="text-org56d34eb">
+<p>
+Data analysis &amp; Data collection| FEB - MARCH 2022
+</p>
+
+<p>
+This project involved following a very common method of questionnaire
+construction and validation in Psychology. We attempted to create a
+measurement of a person's general mistrust tendency. This effort was
+grounded in previous literature, which lead to the segmentation of the
+questionnaire in different 'dimensions' for different aspects of
+mistrust. Thus, a way of evaluating the questionnaire was to perform a
+confirmatory factor analysis (i.e. similar to PCA) and test if items
+linked to a same dimension of mistrust clustered together.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org1dfc56c" class="outline-2">
+<h2 id="org1dfc56c">Minor projects</h2>
+<div class="outline-text-2" id="text-org1dfc56c">
+</div>
+<div id="outline-container-orge94287d" class="outline-3">
+<h3 id="orge94287d">Visualizing restaurant ratings</h3>
+<div class="outline-text-3" id="text-orge94287d">
+<p>
+Data visualization &amp; Data transformation | AUG 2022
+</p>
+
+<p>
+The clarity and aesthetics of visualizations are rarely valued in
+scientific education. Thus I spend some free time improving this aspects
+of my visualization skills. This summer my family and I (i.e. the Chulvi
+family) decided to do a small gastronomic around our hometown (i.e.
+Valencia, Spain). We evaluated restaurants based on different criteria
+which, in turn, had different weights. By the end of the tour, having
+gathered this data, I decided to create a small visualization. The goal
+was, not only to be able to tell what restaurant, but to also see what
+criteria each restaurant excelled/failed at. This would also allow the
+reader to make an informed decision, in case he was most interested in
+one criteria (e.g. food quality) than another (e.g. service quality).
+</p>
+
+<p>
+The resulting visualization can be seen
+<a href="images/plot_rest.png">here</a>.
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<script type="text/javascript">
+<!--/*--><![CDATA[/*><!--*/
+document.cookie = 'theme-mode=dark'
+/*
+;; nice-org-html.js
+;;==============================================================================
+;; Copyright (C) 2024, Ewan Townshend
+
+;; Author: Ewan Townshend
+;; URL: https://github.com/ewantown/nice-org-html
+;; Version: 1.2
+
+;;==============================================================================
+;; This program is free software; you can redistribute it and/or modify
+;; it under the terms of the GNU General Public License as published by
+;; the Free Software Foundation, either version 3 of the License, or
+;; (at your option) any later version.
+
+;; This program is distributed in the hope that it will be useful,
+;; but WITHOUT ANY WARRANTY; without even the implied warranty of
+;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+;; GNU General Public License for more details.
+
+;; You should have received a copy of the GNU General Public License
+;; along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+;; This file is not part of emacs.
+
+;;==============================================================================
+;; JS for html exported by et-org-html.el
+ */
+
+const preamble = document.getElementById("preamble");
+const controls = document.getElementById("view-controls");
+const toggleTocBtn = document.getElementById("toggle-toc");
+const gotoTopBtn = document.getElementById("goto-top");
+const toggleModeBtn = document.getElementById("toggle-mode");
+const content = document.getElementById("content");
+const toc = document.getElementById("table-of-contents");
+
+// Move sticky control bar (injected within preamble)
+document.body.insertBefore(controls, content);
+
+function setMode(mode) {
+  document.body.dataset.mode = mode;
+  toggleModeBtn.innerHTML = (mode === 'light') ? '&#9789;' : '&#9788;';
+  document.cookie = 'theme-mode=' + mode;
+}
+
+// Set mode based on stored cookie
+let cookie = document.cookie.split('; ').find(r => r.startsWith('theme-mode'))
+let mode = cookie ? cookie.split('=')[1] : 'dark'; // Default
+setMode(mode);
+
+// Mode toggling
+toggleModeBtn.addEventListener('click', () => {
+  mode = document.body.dataset.mode === 'dark' ? 'light' : 'dark';
+  setMode(mode);
+})
+
+// Jump to top
+let scrollY = document.documentElement.scrollTop;
+window.addEventListener('scroll', () => {
+  let atTop = document.documentElement.scrollTop <= preamble.offsetHeight;
+  gotoTopBtn.dataset.show = !atTop + "";
+});
+gotoTopBtn.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+})
+
+// Table-of-contents toggling
+if (toc) {
+  toggleTocBtn.dataset.show = 'true';
+  toggleTocBtn.addEventListener('click', () => {
+    let showingToc = document.body.dataset.toc;
+    scrollY = showingToc ? scrollY : document.documentElement.scrollTop;
+    if (showingToc) {
+      document.body.dataset.toc = '';
+      document.documentElement.scrollTop = scrollY;
+    } else {
+      let tocHeight =
+	Math.max(
+	  window.innerHeight - controls.offsetHeight,
+	  toc.offsetHeight
+	);
+      const header = document.getElementById("injected-header");
+      if (header && (scrollY > header.offsetHeight)) {
+	document.documentElement.scrollTop = preamble.offsetHeight;
+      }
+      toc.style.height = `${tocHeight}px`;
+      document.body.dataset.toc = 'true';
+    }
+    toc.addEventListener('click', () => {
+      if (document.body.dataset.toc) {
+	document.body.dataset.toc = '';
+	document.documentElement.scrollTop = scrollY;
+      }
+    })
+  })
+};
+
+// Instrument anchor linking for sticky control bar
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', (e) => {
+    e.preventDefault();
+    const targetId = e.currentTarget.getAttribute('href');
+    const target = document.querySelector(targetId);
+
+    setTimeout(() => {
+      const targetPos = target.getBoundingClientRect().top;
+      let offset = targetPos + document.documentElement.scrollTop;
+      offset -= controls.offsetHeight;
+      window.scrollTo({
+	top: offset,
+	behavior: "smooth"
+      });
+    }, 0);
+  });
+});
+
+function copyTextToClipboard(text) {
+  // Make invisible textarea
+  var textArea = document.createElement("textarea");
+  textArea.style.position = 'fixed';
+  textArea.style.top = 0;
+  textArea.style.left = 0;
+  textArea.style.width = '2em';
+  textArea.style.height = '2em';
+  textArea.style.padding = 0;
+  textArea.style.border = 'none';
+  textArea.style.outline = 'none';
+  textArea.style.boxShadow = 'none';
+  textArea.style.background = 'transparent';
+
+  // Copy contents into it
+  textArea.value = text;
+
+  // Try to copy from it to clipboard
+  document.body.appendChild(textArea);
+  textArea.focus();
+  textArea.select();
+  var res;
+  try {
+    res = document.execCommand('copy');
+  } catch (err) {
+    res = false;
+  }
+
+  // Remove invisible textarea
+  document.body.removeChild(textArea);
+
+  return res;
+}
+
+/*]]>*/-->
+</script><div hidden>Generated by: https://github.com/ewantown/nice-org-html</div>
+</div>
+</body>
 </html>

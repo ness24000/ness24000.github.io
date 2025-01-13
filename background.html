@@ -1,142 +1,882 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <title> Nestor's website</title>
-    <link rel = 'stylesheet' href = 'style.css'>
-  </head>
-  <body>
-    <div class="main">
-      Néstor Narbona Chulvi
-    </div>
-    <div style="margin-left: 100px;margin-right: 100px;">
-      <div class = 'big_line1'></div>
-    </div>
-    <div style="text-align: center">
-      <nav>
-        <ul id = 'navbar'>
-          <li class = 'navitem'> <a href="index.html"> Home </a> </li>
-          <li class = 'navitem'> <a href="background.html"> Background & experience </a> </li>
-          <li class = 'navitem'> <a href="projects.html"> Projects </a> </li>
-          <!-- <li class = 'navitem'> <a href="skills.html"> Skills </a> </li> -->
-        </ul>
-      </nav>
-    </div>
-    <div style="margin-left: 100px;margin-right: 100px;">
-      <div class = 'big_line2'></div>
-    </div>
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-01-13 Mon 18:55 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>My background</title>
+<meta name="generator" content="Org Mode" />
+<style type='text/css'>
+<!--/*--><![CDATA[/*><!--*/
+h2::before { content: '';
+margin-right: calc(0 * 0.22em);
+}
+h3::before { content: '';
+margin-right: calc(0 * 0.23em);
+}
+h4::before { content: '';
+margin-right: calc(0 * 0.24em);
+}
+h5::before { content: '';
+margin-right: calc(0 * 0.25em);
+}
+h6::before { content: '';
+margin-right: calc(0 * 0.26em);
+}
+h2 {
+    font-size: 130%;
+}
 
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
+h3 {
+    font-size: 100%;
+}
 
-          <div style="margin-bottom: 0px;margin-top: 30px; font-size: 38px;"> 
-            Academic background 
-            <div class="line3" style="margin-bottom: 20px; width: 50px; margin-left: 0px;"></div>
-          </div>
 
-          <div style="width: 900px; height: 250px; background-image: url(images/sciencepark); display: flex; justify-content: flex-end; align-items: center;"> 
-            <div class = 'div_background'> 
-              <h4 class = 'title'> Computational Science Minor - University of Amsterdam</h4>
-              <div class = 'date'>SEP 2022 - Present</div>
-              <ul class = 'list_background'> 
-                <li> Pre-master's programme</li> 
-                <li> GPA: 8.75</li>
-              </ul>
-            </div>
-          </div>
+/* for the header */
 
-          <div style="width: 20px; height: 25px"> </div>
+/* Style the header with a grey background and some padding */
+.header {
+    /* ho */
+    overflow: hidden;
+    padding: 20px 10px;
+}
 
-          <div style="width: 900px; height: 250px; background-image: url(images/rec); display: flex; justify-content: flex-end; align-items: center;"> 
-              <div class = 'div_background'> 
-                <h4 class = 'title'> Psychology Bachelor - University of Amsterdam</h4>
-                <div class = 'date'>SEP 2019 - JUN 2022</div>
-                <ul class = 'list_background'> 
-                  <li> Specialization: Psychological Methods and Statistics</li> 
-                  <li>GPA: 8.19</li>
-                  <a href="documents\han_letter.pdf" class="link_doc">Prof. Dr. Han van der Mass' recommendation letter </a>
-                  <a href="documents\transcript_psych.pdf" class="link_doc"> Transcripts </a>
-                </ul>
-              </div>
-          </div>
+/* Style the header links */
+.header a {
+    float: left;
+    color: var(--clr);
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+}
 
-          <div style="width: 20px; height: 25px"> </div>
+.header a.title{
+    font-weight: bold;
+}
 
-          <div style="width: 900px; height: 250px; background-image: url(images/pere); display: flex; justify-content: flex-end; align-items: center;"> 
-              <div class = 'div_background'> 
-                <h4 class="title"> International Baccalaureate (IB) - IES Pere Boil</h4>
-                <div class = 'date'>SEP 2017 - JUN 2019</div>
-                <ul class = 'list_background'> 
-                  <li> High level: Business Management, Spanish, French </li> 
-                  <li> Grade: 41/45</li>
-                  <a href="documents\transcript_psych.pdf" class="link_doc"> Transcripts </a>
-                </ul>
-              </div>
-          </div>
+/* Change the background color on mouse-over */
+.header a:hover {
+    color: pink;
+}
 
-          <div style="width: 20px; height: 25px"> </div>
+/* Float the link section to the right */
+.header-right {
+    float: right;
+}
 
-          <div style="width: 900px; height: 250px; background-image: url(images/pere); display: flex; justify-content: flex-end; align-items: center;"> 
-              <div class = 'div_background'> 
-                <h4 class="title"> Bachillerato - IES Pere Boil</h4>
-                <div class = 'date'>SEP 2017 - JUN 2019</div>
-                <ul class = 'list_background'> 
-                  <li> High level: Business Management, Philosophy, Mathematics </li> 
-                  <li> Grade: 12.57/45</li>
-                  <a href="images/notas_pau.png" class="link_doc"> Transcripts </a>
-                </ul>
-              </div>
-          </div>
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 750px) {
+    .header a {
+	float: none;
+	display: block;
+	text-align: left;
+    }
+    .header a.title{
+	clear: right;
+    }
+    .header-right {
+	float: none;
+    }
+}
 
-          <div style="margin-bottom: 0px;margin-top: 30px; font-size: 38px;"> 
-            Professional background
-            <div class="line3" style="margin-bottom: 20px; width: 50px; margin-left: 0px;"></div>
-          </div>
+/* nice-org-html.css
+;;==============================================================================
+;; Copyright (C) 2024, Ewan Townshend
 
-          <div style="width: 900px; height: 250px; background-image: url(images/bigrec.jpg); display: flex; justify-content: flex-end; align-items: center;"> 
-            <div class = 'div_background'> 
-              <h4 class="title"> Computational Social Sciences Teacher Assistant- University of Amsterdam </h4>
-              <div class = 'date'> JAN 2023 - Present</div>
-              <ul class = 'list_background'> 
-                <li> Technical Expertise track (e.g. programming, data analysis, web development) </li> 
-                <li> <a href="https://www.uva.nl/en/programmes/bachelors/computational-social-science/study-programme/study-programme.html#Year-1" class = "link_doc" style = 'margin: 0px'> Bachelor's study program</a> </li>
-              </ul>
-            </div>
-          </div>
+;; Author: Ewan Townshend
+;; URL: https://github.com/ewantown/nice-org-html
+;; Version: 1.2
 
-          <div style="width: 20px; height: 25px"> </div>
+;;==============================================================================
+;; This program is free software; you can redistribute it and/or modify
+;; it under the terms of the GNU General Public License as published by
+;; the Free Software Foundation, either version 3 of the License, or
+;; (at your option) any later version.
 
-          <div style="width: 900px; height: 250px; background-image: url(images/athena.png); display: flex; justify-content: flex-end; align-items: center;"> 
-            <div class = 'div_background'> 
-              <h4 class="title"> Statistics teacher- Athena Studies</h4>
-              <div class = 'date'>MAY 2021 - JUN 2022</div>
-              <ul class = 'list_background'> 
-                <li> 2nd year statistics and theory of measurement courses</li> 
-                <li>Students rating: 9.52</li>
-                <a href="documents\india_letter.pdf" class="link_doc"> Faculty manager's recommendation letter </a>
-              </ul>
-            </div>
-          </div>
+;; This program is distributed in the hope that it will be useful,
+;; but WITHOUT ANY WARRANTY; without even the implied warranty of
+;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+;; GNU General Public License for more details.
 
-          <div style="width: 20px; height: 25px"> </div>
+;; You should have received a copy of the GNU General Public License
+;; along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-          <div style="width: 900px; height: 250px; background-image: url(images/spiegeloog.png); display: flex; justify-content: flex-end; align-items: center;"> 
-            <div class = 'div_background'> 
-              <h4 class="title"> Editor - Spiegeloog</h4>
-              <div class = 'date'>FEB 2020 - NOV 2021</div>
-              <ul class = 'list_background'> 
-                <li> Pop-science articles, interviews, opinion pieces and book reviews</li> 
-                <a href="https://www.spiegeloog.amsterdam/author/nestor/" class="link_doc"> Check out some articles </a>
-              </ul>
-            </div>
-          </div>
+;; This file is not part of emacs.
 
-        <div style="width: 50px; height: 60px"> </div>
+;;==============================================================================
+*/
 
-        </div>
-      </div>
-    </div>  
-  </body>
+/* basic layout ***************************************************************/
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+html {
+    font-family: Sans;
+    line-height: 1.3;
+    font-size: calc(15px + 0.390625vw);
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    background: #999; /* overwritten with theme --bg */
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family:
+	system-ui,
+	-apple-system,
+	'Segoe UI',
+	Roboto,
+	Helvetica,
+	Arial,
+	sans-serif,
+	'Apple Color Emoji',
+	'Segoe UI Emoji';
+}
+
+#preamble,
+#postamble {
+    width: 100%;
+}
+
+#content {
+    width: 80%;
+    max-width: 80ch;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    flex: 1;
+}
+
+/* custom facing **************************************************************/
+/* The variable values are injected by CSS pre-processing in et-org-html.el */
+:root {
+  --bc-tb: #383a42;
+  --bc-block: initial;
+  --clr: #383a42;
+  --clr-tb-hd: initial;
+  --clr-code: initial;
+  --bg: #fafafa;
+  --bg-code: #f0f0f1;
+  --bg-tb-hd: #f0f0f1;
+  --bg-block: initial;
+  --clr-link: #008B8B;
+  --clr-title: #383a42;
+  --clr-todo: #50a14f;
+  --bg-todo: initial;
+  --clr-done: #a0a1a7;
+  --bg-done: initial;
+  --ts-clr: #a626a4;
+  --mg: 20px;
+  --w-toc: 300px;
+  --bg-keyword: initial;
+  --clr-keyword: #a626a4;
+  --bg-constant: initial;
+  --clr-constant: #008B8B;
+  --bg-comment: initial;
+  --clr-comment: #a0a1a7;
+  --bg-comment-delimiter: initial;
+  --clr-comment-delimiter: initial;
+  --bg-function: initial;
+  --clr-function: #0184bc;
+  --bg-variable: initial;
+  --clr-variable: #8B4513;
+  --bg-preprocessor: initial;
+  --clr-preprocessor: initial;
+  --bg-doc: initial;
+  --clr-doc: initial;
+  --bg-builtin: initial;
+  --clr-builtin: #e44649;
+  --bg-string: initial;
+  --clr-string: #50a14f;
+}
+
+body[data-mode='light'] {
+  background: var(--bg);
+  color: var(--clr);
+}
+
+body[data-mode='dark'] {
+  background: var(--bg);
+  color: var(--clr);
+  --bc-tb: #FF0000;
+  --bc-block: initial;
+  --clr: #F5F5F5;
+  --clr-code: initial;
+  --clr-tb-hd: initial;
+  --bg: #333333;
+  --bg-tb-hd: #4D4D4D;
+  --bg-code: #4D4D4D;
+  --bg-block: initial;
+  --clr-link: #1E90FF;
+  --clr-title: #F5F5F5;
+  --clr-todo: #FFA07A;
+  --bg-todo: initial;
+  --clr-done: #CD853F;
+  --bg-done: initial;
+  --ts-clr: #20B2AA;
+  --mg: 20px;
+  --w-toc: 300px;
+  --bg-keyword: initial;
+  --clr-keyword: #20B2AA;
+  --bg-constant: initial;
+  --clr-constant: #1E90FF;
+  --bg-comment: initial;
+  --clr-comment: #CD853F;
+  --bg-comment-delimiter: initial;
+  --clr-comment-delimiter: initial;
+  --bg-function: initial;
+  --clr-function: #00FF7F;
+  --bg-variable: initial;
+  --clr-variable: #9ACD32;
+  --bg-preprocessor: initial;
+  --clr-preprocessor: #6495ED;
+  --bg-doc: initial;
+  --clr-doc: #CD5C5C;
+  --bg-builtin: initial;
+  --clr-builtin: #76EE00;
+  --bg-string: initial;
+  --clr-string: #FFA07A;
+}
+
+
+/* ootb page layout ***********************************************************/
+#view-controls {
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--bg);
+    color: var(--clr-code);
+    height: 2.5rem;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    z-index: 100;
+    border-radius: 5px; /* Rounded corners */
+}
+#toggle-mode {
+    position: absolute;
+    right: 5%;
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+    background: var(--bg);
+    color: var(--clr-code);
+    padding: 0.25rem 0;
+}
+#goto-top {
+    display: none;
+}
+#goto-top[data-show="true"] {
+    position: relative;
+    display: block;
+    text-align: center;
+    font-size: 1rem;
+    background: var(--bg);
+    color: var(--clr-code);
+    padding: 0.25rem 0;
+}
+#toggle-toc {
+    display: none;
+}
+#toggle-toc[data-show="true"] {
+    position: absolute;
+    left: 5%;
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+    background: var(--bg);
+    color: var(--clr-code);
+    padding: 0.25rem 0;
+}
+
+#toggle-toc:hover,
+#goto-top:hover,
+#toggle-mode:hover {
+    cursor: pointer;
+}
+
+#table-of-contents {
+    display: none;
+}
+#table-of-contents[data-show="true"] {
+    width: 80%;
+    max-width: 80rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    background: var(--bg);
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+#table-of-contents::-webkit-scrollbar {
+  display: none;
+}
+
+body[data-toc="true"] #content * {
+    display: none;
+}
+body[data-toc="true"] #content #table-of-contents,
+body[data-toc="true"] #content #table-of-contents * {
+    display: block;
+}
+
+
+/* misc elements **************************************************************/
+
+hr {
+	height: 0;
+	color: inherit;
+}
+
+b,
+strong {
+	font-weight: bolder;
+}
+
+code,
+kbd,
+samp,
+pre {
+    font-family:
+	Menlo,
+	ui-monospace,
+	SFMono-Regular,
+	Consolas,
+	'Liberation Mono',
+	monospace;
+}
+
+small {
+	font-size: 80%;
+}
+
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sub {
+	bottom: -0.25em;
+}
+
+sup {
+	top: -0.5em;
+}
+
+table {
+	text-indent: 0;
+	border-color: inherit;
+}
+
+summary {
+	display: list-item;
+}
+
+h1 {
+  color: var(--clr-title);
+  text-align: center;
+}
+h2, h3, h4, h5, h6, h7 {
+  font-family: Sans Serif;
+}
+h2 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+code {
+  color: var(--clr-code);
+  background: var(--bg-code);
+  border-radius: 2px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+pre {
+    padding: 1rem;
+    border: 1px solid var(--bc-block);
+    border-radius: 0.5rem;
+    background: var(--bg-block);
+    font-size: 0.9rem;
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: thin;
+}
+
+pre::-webkit-scrollbar {
+  display: none;
+}
+
+.todo {
+  color: var(--clr-todo);
+  background: var(--bg-todo);
+}
+
+.done {
+  color: var(--clr-done);
+  background: var(--bg-done);
+}
+
+.timestamp-wrapper {
+  font-size: 0.8rem;
+  color: var(--clr-ts);
+}
+
+table {
+  width: 100%;
+  border: 2px solid var(--bc-tb);
+}
+
+thead {
+  color: var(--clr-tb-hd);
+  background: var(--bg-tb-hd);
+}
+
+td, th {
+  border: thin solid var(--bc-tb);
+}
+
+li {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+#text-table-of-contents li a:before {
+    content: "• "
+}
+
+a {
+  text-decoration: none;
+  color: var(--clr-link);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.MathJax_Display {
+  font-size: 1.25em;
+}
+
+img {
+  max-width: 100%;
+}
+
+.org-src-wrapper {
+  position: relative;
+}
+
+.org-src-wrapper .org-src-container {
+    position: relative;
+    border: 1px solid var(--bc-block);
+    border-radius: 0.5rem;
+    background: var(--bg-code);
+}
+
+.org-src-wrapper .org-src-container:has(+ .copyBtn) pre {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.org-src-wrapper .srcBtnBar {
+    width: 100%;
+    background: transparent;
+    position: relative;
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.org-src-wrapper .copyBtn {
+  position: absolute;
+  top: 0rem;
+  right: 0rem;
+  background-color: transparent;
+  color: var(--clr-doc);
+  border: none;
+  padding: 0.5rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 0.8rem;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: opacity 0.3s;
+}
+
+.org-src-wrapper .copyBtn:hover {
+  opacity: 1;
+}
+
+.org-src-wrapper .copyBtn i {
+    margin-right: 0.5rem;
+    padding: 0.5rem;
+}
+
+
+/* responsive layouts *********************************************************/
+
+@media only screen and (max-width: 768px) {
+    #toggle-toc[data-show='true'] {
+	padding-right: 5%;
+    }
+    #toggle-mode {
+	padding-left: 5%;
+    }
+    #content {
+	width: 90%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #view-controls {
+	padding-top: 1.5em;
+	padding-bottom: 1.5em;
+    }
+    #toggle-toc[data-show='true'] {
+	padding-right: 5%;
+    }
+    #toggle-mode {
+	padding-left: 5%;
+    }
+    #content {
+	width: 90%;
+    }
+}
+
+/*]]>*/-->
+</style>
+</head>
+<body>
+<div id="preamble" class="status">
+<div id='injected-header' class='injected'><div class="header">
+  <a href="index.html" class="title">Website::Néstor Narbona Chulvi</a>
+  <div class="header-right">
+    <a href="index.html">Home</a>
+    <a href="background.html">Background</a>
+    <a href="projects.html">Projects</a>
+    <a href="documents/cv.pdf">CV</a>
+  </div>
+</div>
+</div><div id='view-controls'><div id='toggle-mode' title='Mode'>&#9788;</div><div id='goto-top' title='Top'>&#8963;</div><div id='toggle-toc' title='Contents'>&#9776;</div></div>
+</div>
+<div id="content" class="content">
+<h1 class="title">My background</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org6d082ca">Professional roles</a>
+<ul>
+<li><a href="#org51807fd">[FEB 2024 - Present] Junior Data Scientist - MLP</a></li>
+<li><a href="#org28058a1">[JAN 2023 - FEB 2024] Teacher Assistant - University of Amsterdam</a></li>
+<li><a href="#orgb64bab1">[MAY 2021 - JUN 2022] Junior Lecturer - Athena Studies</a></li>
+<li><a href="#orgd83deb4">[FEB 2020 - NOV 2021] Editor - Spiegeloog</a></li>
+</ul>
+</li>
+<li><a href="#orgbae5da6">Academic career</a>
+<ul>
+<li><a href="#orge71b463">[SEP 2022 - JAN 2023] Computational Science - University of Amsterdam</a></li>
+<li><a href="#orgad458a7">[SEP 2019 - JUN 2022] Psychology Bachelor - University of Amsterdam</a></li>
+<li><a href="#org262cdb9">[SEP 2017 - JUN 2019] International Baccalaureate (IB)</a></li>
+<li><a href="#orge1bbdb0">[SEP 2017 - JUN 2019] Spanish Bachillerato</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<p>
+Here you can find all about my current and previous professional
+roles, as well as my academic career. Too long? Click on <b>☰</b> for an
+overview.
+</p>
+
+<div id="outline-container-org6d082ca" class="outline-2">
+<h2 id="org6d082ca">Professional roles</h2>
+<div class="outline-text-2" id="text-org6d082ca">
+</div>
+<div id="outline-container-org51807fd" class="outline-3">
+<h3 id="org51807fd">[FEB 2024 - Present] Junior Data Scientist - MLP</h3>
+<div class="outline-text-3" id="text-org51807fd">
+<p>
+<a href="https://www.mlprograms.com/">MLP</a> stands for Machine Learning Programs😮 and thats what we do. In
+particular we use ML to help actors in the insurance sector better
+understand the market, asses risk and, overall, improve their
+business. We are part of the larger <a href="https://opengi.co.uk/">Open Gi</a>, a UK insurance software
+house. We are a small company and, thus, my role covers the entire
+pipeline from raw data to final product (e.g. initial data cleaning
+and analysis, development of models, building and testing of product
+infrastructure).
+</p>
+</div>
+</div>
+
+<div id="outline-container-org28058a1" class="outline-3">
+<h3 id="org28058a1">[JAN 2023 - FEB 2024] Teacher Assistant - University of Amsterdam</h3>
+<div class="outline-text-3" id="text-org28058a1">
+<p>
+Guiding practical sessions, developing teaching material and grading
+for the <a href="https://www.uva.nl/en/programmes/bachelors/computational-social-science/study-programme/study-programme.html#Year-1">Computational Social Sciences</a> bachelor at the University of
+Amsterdam. I taught students how to program (Python, SQL, HTML, CSS),
+and how to develop small scale web applications with an immediate
+social impact. 
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb64bab1" class="outline-3">
+<h3 id="orgb64bab1">[MAY 2021 - JUN 2022] Junior Lecturer - Athena Studies</h3>
+<div class="outline-text-3" id="text-orgb64bab1">
+<p>
+<a href="https://athenastudies.co.uk/">Athena Studies</a> is the number one company offering study assistance to
+university students in the Netherlands. I was in charge of different
+statistics courses, preparing the material and giving the (some times
+days long) lectures. Although it was hard work, I enjoyed it got often
+rewarded with great feedback from students. They once rated me high
+enough for my boss' boss to <a href="documents/india_letter.pdf">congratulate</a> me💪.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd83deb4" class="outline-3">
+<h3 id="orgd83deb4">[FEB 2020 - NOV 2021] Editor - Spiegeloog</h3>
+<div class="outline-text-3" id="text-orgd83deb4">
+<p>
+During the my first years in university I was an editor for the
+Psychology faculty's magazine. There I wrote a few articles and
+conducted interviews. In the end, it appears, I chose data science
+over journalism, but you can still <a href="https://www.spiegeloog.amsterdam/author/nestor/">check some of that work</a>. 
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgbae5da6" class="outline-2">
+<h2 id="orgbae5da6">Academic career</h2>
+<div class="outline-text-2" id="text-orgbae5da6">
+</div>
+<div id="outline-container-orge71b463" class="outline-3">
+<h3 id="orge71b463">[SEP 2022 - JAN 2023] Computational Science - University of Amsterdam</h3>
+<div class="outline-text-3" id="text-orge71b463">
+<ul class="org-ul">
+<li>Pre-master's programme</li>
+<li>GPA: 8.75</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgad458a7" class="outline-3">
+<h3 id="orgad458a7">[SEP 2019 - JUN 2022] Psychology Bachelor - University of Amsterdam</h3>
+<div class="outline-text-3" id="text-orgad458a7">
+<ul class="org-ul">
+<li>Specialization: Psychological Methods and Statistics</li>
+<li>GPA: 8.19</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org262cdb9" class="outline-3">
+<h3 id="org262cdb9">[SEP 2017 - JUN 2019] International Baccalaureate (IB)</h3>
+<div class="outline-text-3" id="text-org262cdb9">
+<ul class="org-ul">
+<li>High level: Business Management, Spanish, French</li>
+<li>Grade: 41/45</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orge1bbdb0" class="outline-3">
+<h3 id="orge1bbdb0">[SEP 2017 - JUN 2019] Spanish Bachillerato</h3>
+<div class="outline-text-3" id="text-orge1bbdb0">
+<p>
+SEP 2017 - JUN 2019
+</p>
+
+<ul class="org-ul">
+<li>High level: Business Management, Philosophy, Mathematics</li>
+<li>Grade: 12.57/45</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<script type="text/javascript">
+<!--/*--><![CDATA[/*><!--*/
+document.cookie = 'theme-mode=dark'
+/*
+;; nice-org-html.js
+;;==============================================================================
+;; Copyright (C) 2024, Ewan Townshend
+
+;; Author: Ewan Townshend
+;; URL: https://github.com/ewantown/nice-org-html
+;; Version: 1.2
+
+;;==============================================================================
+;; This program is free software; you can redistribute it and/or modify
+;; it under the terms of the GNU General Public License as published by
+;; the Free Software Foundation, either version 3 of the License, or
+;; (at your option) any later version.
+
+;; This program is distributed in the hope that it will be useful,
+;; but WITHOUT ANY WARRANTY; without even the implied warranty of
+;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+;; GNU General Public License for more details.
+
+;; You should have received a copy of the GNU General Public License
+;; along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+;; This file is not part of emacs.
+
+;;==============================================================================
+;; JS for html exported by et-org-html.el
+ */
+
+const preamble = document.getElementById("preamble");
+const controls = document.getElementById("view-controls");
+const toggleTocBtn = document.getElementById("toggle-toc");
+const gotoTopBtn = document.getElementById("goto-top");
+const toggleModeBtn = document.getElementById("toggle-mode");
+const content = document.getElementById("content");
+const toc = document.getElementById("table-of-contents");
+
+// Move sticky control bar (injected within preamble)
+document.body.insertBefore(controls, content);
+
+function setMode(mode) {
+  document.body.dataset.mode = mode;
+  toggleModeBtn.innerHTML = (mode === 'light') ? '&#9789;' : '&#9788;';
+  document.cookie = 'theme-mode=' + mode;
+}
+
+// Set mode based on stored cookie
+let cookie = document.cookie.split('; ').find(r => r.startsWith('theme-mode'))
+let mode = cookie ? cookie.split('=')[1] : 'dark'; // Default
+setMode(mode);
+
+// Mode toggling
+toggleModeBtn.addEventListener('click', () => {
+  mode = document.body.dataset.mode === 'dark' ? 'light' : 'dark';
+  setMode(mode);
+})
+
+// Jump to top
+let scrollY = document.documentElement.scrollTop;
+window.addEventListener('scroll', () => {
+  let atTop = document.documentElement.scrollTop <= preamble.offsetHeight;
+  gotoTopBtn.dataset.show = !atTop + "";
+});
+gotoTopBtn.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+})
+
+// Table-of-contents toggling
+if (toc) {
+  toggleTocBtn.dataset.show = 'true';
+  toggleTocBtn.addEventListener('click', () => {
+    let showingToc = document.body.dataset.toc;
+    scrollY = showingToc ? scrollY : document.documentElement.scrollTop;
+    if (showingToc) {
+      document.body.dataset.toc = '';
+      document.documentElement.scrollTop = scrollY;
+    } else {
+      let tocHeight =
+	Math.max(
+	  window.innerHeight - controls.offsetHeight,
+	  toc.offsetHeight
+	);
+      const header = document.getElementById("injected-header");
+      if (header && (scrollY > header.offsetHeight)) {
+	document.documentElement.scrollTop = preamble.offsetHeight;
+      }
+      toc.style.height = `${tocHeight}px`;
+      document.body.dataset.toc = 'true';
+    }
+    toc.addEventListener('click', () => {
+      if (document.body.dataset.toc) {
+	document.body.dataset.toc = '';
+	document.documentElement.scrollTop = scrollY;
+      }
+    })
+  })
+};
+
+// Instrument anchor linking for sticky control bar
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', (e) => {
+    e.preventDefault();
+    const targetId = e.currentTarget.getAttribute('href');
+    const target = document.querySelector(targetId);
+
+    setTimeout(() => {
+      const targetPos = target.getBoundingClientRect().top;
+      let offset = targetPos + document.documentElement.scrollTop;
+      offset -= controls.offsetHeight;
+      window.scrollTo({
+	top: offset,
+	behavior: "smooth"
+      });
+    }, 0);
+  });
+});
+
+function copyTextToClipboard(text) {
+  // Make invisible textarea
+  var textArea = document.createElement("textarea");
+  textArea.style.position = 'fixed';
+  textArea.style.top = 0;
+  textArea.style.left = 0;
+  textArea.style.width = '2em';
+  textArea.style.height = '2em';
+  textArea.style.padding = 0;
+  textArea.style.border = 'none';
+  textArea.style.outline = 'none';
+  textArea.style.boxShadow = 'none';
+  textArea.style.background = 'transparent';
+
+  // Copy contents into it
+  textArea.value = text;
+
+  // Try to copy from it to clipboard
+  document.body.appendChild(textArea);
+  textArea.focus();
+  textArea.select();
+  var res;
+  try {
+    res = document.execCommand('copy');
+  } catch (err) {
+    res = false;
+  }
+
+  // Remove invisible textarea
+  document.body.removeChild(textArea);
+
+  return res;
+}
+
+/*]]>*/-->
+</script><div hidden>Generated by: https://github.com/ewantown/nice-org-html</div>
+</div>
+</body>
 </html>
