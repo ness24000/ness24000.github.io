@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2025-01-13 Mon 18:55 -->
+<!-- 2025-01-13 Mon 22:05 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>My projects</title>
@@ -24,6 +24,9 @@ margin-right: calc(0 * 0.25em);
 }
 h6::before { content: '';
 margin-right: calc(0 * 0.26em);
+}
+*{
+    font-family: "Lucida Console", "Courier New", monospace;
 }
 h2 {
     font-size: 130%;
@@ -583,39 +586,28 @@ img {
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org21d81fe">Major projects</a>
-<ul>
-<li><a href="#orgf3fe30d">Modeling information diffusion in empirical and theoretical social networks</a></li>
-<li><a href="#orgaf58129">Stock value prediction based on sentiment analysis of financial articles</a></li>
-<li><a href="#orgfbf3dbf">Interactive map of drug consumption in the European Union</a></li>
-<li><a href="#org2f0144f">Measuring political involvement in Twitter using SVM and followers network</a></li>
-<li><a href="#org5a267f8">Link between political involvement and polarization in social media</a></li>
-<li><a href="#orgb931d0a">Evaluating Spotify's song valence metric</a></li>
-<li><a href="#org56d34eb">Dimensionality and reliability of an original questionnaire</a></li>
-</ul>
-</li>
-<li><a href="#org1dfc56c">Minor projects</a>
-<ul>
-<li><a href="#orge94287d">Visualizing restaurant ratings</a></li>
-</ul>
-</li>
+<li><a href="#org43319e3">Modeling information diffusion in empirical and theoretical social networks</a></li>
+<li><a href="#org57a263c">Stock value prediction based on sentiment analysis of financial articles</a></li>
+<li><a href="#org2118551">Measuring political involvement in Twitter using SVM and followers network</a></li>
+<li><a href="#orge9698db">Link between political involvement and polarization in social media</a></li>
+<li><a href="#orge22e1e9">Interactive map of drug consumption in the European Union</a></li>
+<li><a href="#org2ffcbe0">Evaluating Spotify's song valence metric</a></li>
+<li><a href="#orgcaa1318">Dimensionality and reliability of an original questionnaire</a></li>
+<li><a href="#org28482ec">Visualizing restaurant ratings</a></li>
 </ul>
 </div>
 </div>
-
-<div id="outline-container-org21d81fe" class="outline-2">
-<h2 id="org21d81fe">Major projects</h2>
-<div class="outline-text-2" id="text-org21d81fe">
-</div>
-<div id="outline-container-orgf3fe30d" class="outline-3">
-<h3 id="orgf3fe30d">Modeling information diffusion in empirical and theoretical social networks</h3>
-<div class="outline-text-3" id="text-orgf3fe30d">
 <p>
-<code>pytest</code> <code>SQL</code>
+Here you can find some of the projects I have been involved in the
+past. Only projects not protected under NDA are shown, thus most come
+from my studies. Too long? Click on <b>☰</b> for an overview.
 </p>
 
+<div id="outline-container-org43319e3" class="outline-2">
+<h2 id="org43319e3">Modeling information diffusion in empirical and theoretical social networks</h2>
+<div class="outline-text-2" id="text-org43319e3">
 <p>
-Network analysis | JAN 2023 - Present
+<code>network analysis</code> <code>hypothesis testing</code> <code>information diffusion modeling</code>
 </p>
 
 <p>
@@ -629,20 +621,16 @@ information spread metrics (e.g. reach, speed, characteristic of
 influential nodes) between the BA model and an empirical Facebook
 social network, assuming information spread via different models. The
 correspondence will be evaluated by means of different error
-measurements and significance tests.
-</p>
-
-<p>
-Checks the project's <a href="https://github.com/DiederikPC/project-computational-science.git">Github</a> .
+measurements and significance tests. Checks the project's <a href="https://github.com/DiederikPC/project-computational-science.git">Github</a>.
 </p>
 </div>
 </div>
 
-<div id="outline-container-orgaf58129" class="outline-3">
-<h3 id="orgaf58129">Stock value prediction based on sentiment analysis of financial articles</h3>
-<div class="outline-text-3" id="text-orgaf58129">
+<div id="outline-container-org57a263c" class="outline-2">
+<h2 id="org57a263c">Stock value prediction based on sentiment analysis of financial articles</h2>
+<div class="outline-text-2" id="text-org57a263c">
 <p>
-NLP, Time series &amp; APIs | NOV 2022 - DEC 2022
+<code>NLP</code> <code>time series</code> <code>APIs</code> <code>financial modeling</code>
 </p>
 
 <p>
@@ -670,47 +658,16 @@ trained models to predict 14 days ahead (from the end of the data set),
 and computed the RMSE and its bootstrap confidence interval. We
 concluded that for none of the companies introducing information about
 sentiment in corresponding financial articles improved the prediction of
-stock value.
-</p>
-
-<p>
-Code is available in the following <a href="https://github.com/DerkNiessink/Project_SDA">GitHub page</a>.
+stock value. Code is available in the following <a href="https://github.com/DerkNiessink/Project_SDA">GitHub page</a>.
 </p>
 </div>
 </div>
 
-<div id="outline-container-orgfbf3dbf" class="outline-3">
-<h3 id="orgfbf3dbf">Interactive map of drug consumption in the European Union</h3>
-<div class="outline-text-3" id="text-orgfbf3dbf">
+<div id="outline-container-org2118551" class="outline-2">
+<h2 id="org2118551">Measuring political involvement in Twitter using SVM and followers network</h2>
+<div class="outline-text-2" id="text-org2118551">
 <p>
-Data visualization | SEP 2022
-</p>
-
-<p>
-I crated an interactive choropleth map of the European Union where one
-can quickly see what was the last month prevalence for different drugs
-(e.g. cannabis, alcohol, cocaine, tobacco). Data comes from the European
-Monitoring Centre for Drugs and Drug Addiction's (EMCDD)
-<a href="https://www.emcdda.europa.eu/data/stats2022/gps_en">2022 Statistical
-Bulletin</a>. The visualization was crated using Plotly and Plotly Dash.
-Some extra features include sample size information and survey year.
-This appears one hovers over a country.
-</p>
-
-<p>
-To see the code, documentation and the accompanying report visit
-<a href="https://github.com/ness24000/1Repository.git">this GitHub
-repository</a>. To see a quick preview <a href="images/Map.gif">click
-here</a>.
-</p>
-</div>
-</div>
-
-<div id="outline-container-org2f0144f" class="outline-3">
-<h3 id="org2f0144f">Measuring political involvement in Twitter using SVM and followers network</h3>
-<div class="outline-text-3" id="text-org2f0144f">
-<p>
-Data analysis, Machine learning, NLP &amp; APIs | JAN 2022 - JUN 2022
+<code>SVM classifier</code> <code>NLP</code> <code>API</code> <code>model fitting</code> <code>measurement validity</code>
 </p>
 
 <p>
@@ -719,69 +676,81 @@ The results from my bachelor thesis did not correspond to expectations
 of political attitudes seemed to be a good candidate for further
 improvement. A careful application of a dictionary-based Sentiment
 Analysis coupled with Name Entity Recognition, seemed to have fail at
-capturing users' political attitude. Specifically, it seemed to average
-out extreme opinions of single users. The improvement involved
+capturing users' political attitude. Specifically, it seemed to
+average out extreme opinions of single users. The improvement involved
 separating the measurement of the opinion's polarity from the
-measurement of its strength. The former was assessed using a pre-trained
-Support Vector Machine classifying posts as pro or against the political
-ideology, based on their network of Twitter followers and followings.
-The latter measurement involved sentiment analysis in absolute terms
-(i.e. 0 = weak opinion; 5 = very strong opinion). The same analysis as
-in the bachelor thesis was performed using this new metric. Results show
-that the new measurement solved the problem the previous method showed,
-and political attitudes distributions were indeed showing bimodality.
-Nevertheless, no increase in the extremity of this bimodality as a
-function of political involvement was observed.
-</p>
-
-<p>
-The <a href="documents/research_internship.pdf">full report</a> contains
-more information about the rationale behind the decision and the methods
-used.
+measurement of its strength. The former was assessed using a
+pre-trained Support Vector Machine classifying posts as pro or against
+the political ideology, based on their network of Twitter followers
+and followings.  The latter measurement involved sentiment analysis in
+absolute terms (i.e. 0 = weak opinion; 5 = very strong opinion). The
+same analysis as in the bachelor thesis was performed using this new
+metric. Results show that the new measurement solved the problem the
+previous method showed, and political attitudes distributions were
+indeed showing bimodality.  Nevertheless, no increase in the extremity
+of this bimodality as a function of political involvement was
+observed. The <a href="documents/research_internship.pdf">full report</a> contains more information about the
+rationale behind the decision and the methods used.
 </p>
 </div>
 </div>
 
-<div id="outline-container-org5a267f8" class="outline-3">
-<h3 id="org5a267f8">Link between political involvement and polarization in social media</h3>
-<div class="outline-text-3" id="text-org5a267f8">
+<div id="outline-container-orge9698db" class="outline-2">
+<h2 id="orge9698db">Link between political involvement and polarization in social media</h2>
+<div class="outline-text-2" id="text-orge9698db">
 <p>
-Data analysis, NLP &amp; APIs | NOV 2021 - JAN 2022
+<code>attitude modeling</code> <code>NLP</code> <code>model fitting</code> <code>API</code>
 </p>
 
 <p>
 This was my Bachelor's Thesis project entitled: <i>Using Social Media
-Analytics to Explore Political Involvement and Polarization: Challenges
-and New Insight</i>. It go awarded a 9. Here is the abstract: <i>"When
-applied to political attitudes, the Cusp Catastrophe model predicts that
-people with a high political involvement will hold extreme political
-attitudes (i.e. will be more polarized). We tested this prediction by
-fitting a Cusp Catastrophe model to data regarding political involvement
-and attitude towards Joe Biden, obtained using Twitter Analytics and
-Natural Language Processing. Political involvement was measured using a
-dictionary approach: how many of a user's last 100 posts contained
-‘political terms' and thus could be considered political. Attitude
-towards Joe Biden was measured by performing a Sentiment Analysis on
-those posts in which the user mentioned only Joe Biden and no other
-political/social figure (this filtering was accomplished using Name
-Entity Recognition). The Cusp Catastrophe model showed a poor fit to
-this data, pointing at political involvement being unrelated to
-extremity of political attitudes."</i>
+Analytics to Explore Political Involvement and Polarization:
+Challenges and New Insight</i>. It go awarded a 9. Here is the abstract:
+/"When applied to political attitudes, the Cusp Catastrophe model
+predicts that people with a high political involvement will hold
+extreme political attitudes (i.e. will be more polarized). We tested
+this prediction by fitting a Cusp Catastrophe model to data regarding
+political involvement and attitude towards Joe Biden, obtained using
+Twitter Analytics and Natural Language Processing. Political
+involvement was measured using a dictionary approach: how many of a
+user's last 100 posts contained ‘political terms' and thus could be
+considered political. Attitude towards Joe Biden was measured by
+performing a Sentiment Analysis on those posts in which the user
+mentioned only Joe Biden and no other political/social figure (this
+filtering was accomplished using Name Entity Recognition). The Cusp
+Catastrophe model showed a poor fit to this data, pointing at
+political involvement being unrelated to extremity of political
+attitudes." To see data sets, code and full report visit <a href="https://github.com/ness24000/Thesis-Project-Psychological-Methods-and-Statistics.git">this GitHub
+repository.</a>
+</p>
+</div>
+</div>
+<div id="outline-container-orge22e1e9" class="outline-2">
+<h2 id="orge22e1e9">Interactive map of drug consumption in the European Union</h2>
+<div class="outline-text-2" id="text-orge22e1e9">
+<p>
+<code>data visualization</code>
 </p>
 
 <p>
-To see data sets, code and full report visit
-<a href="https://github.com/ness24000/Thesis-Project-Psychological-Methods-and-Statistics.git">this
-GitHub repository.</a>
+I crated an interactive choropleth map of the European Union where one
+can quickly see what was the last month prevalence for different drugs
+(e.g. cannabis, alcohol, cocaine, tobacco). Data comes from the
+European Monitoring Centre for Drugs and Drug Addiction's (EMCDD) <a href="https://www.emcdda.europa.eu/data/stats2022/gps_en">2022
+Statistical Bulletin</a>. The visualization was crated using Plotly and
+Plotly Dash.  Some extra features include sample size information and
+survey year.  This appears one hovers over a country. To see the code,
+documentation and the accompanying report visit <a href="https://github.com/ness24000/1Repository.git">this GitHub
+repository</a>. To see a quick preview <a href="images/Map.gif">click here</a>.
 </p>
 </div>
 </div>
 
-<div id="outline-container-orgb931d0a" class="outline-3">
-<h3 id="orgb931d0a">Evaluating Spotify's song valence metric</h3>
-<div class="outline-text-3" id="text-orgb931d0a">
+<div id="outline-container-org2ffcbe0" class="outline-2">
+<h2 id="org2ffcbe0">Evaluating Spotify's song valence metric</h2>
+<div class="outline-text-2" id="text-org2ffcbe0">
 <p>
-Data analysis, Data collection &amp; API | OCT 2021 - JAN 2022
+<code>data analysis</code>  <code>data collection</code>  <code>API</code>
 </p>
 
 <p>
@@ -812,11 +781,11 @@ visualization and interpretation of results can be seen in the following
 </div>
 </div>
 
-<div id="outline-container-org56d34eb" class="outline-3">
-<h3 id="org56d34eb">Dimensionality and reliability of an original questionnaire</h3>
-<div class="outline-text-3" id="text-org56d34eb">
+<div id="outline-container-orgcaa1318" class="outline-2">
+<h2 id="orgcaa1318">Dimensionality and reliability of an original questionnaire</h2>
+<div class="outline-text-2" id="text-orgcaa1318">
 <p>
-Data analysis &amp; Data collection| FEB - MARCH 2022
+<code>data analysis</code> <code>data collection</code> 
 </p>
 
 <p>
@@ -831,38 +800,29 @@ linked to a same dimension of mistrust clustered together.
 </p>
 </div>
 </div>
-</div>
 
-<div id="outline-container-org1dfc56c" class="outline-2">
-<h2 id="org1dfc56c">Minor projects</h2>
-<div class="outline-text-2" id="text-org1dfc56c">
-</div>
-<div id="outline-container-orge94287d" class="outline-3">
-<h3 id="orge94287d">Visualizing restaurant ratings</h3>
-<div class="outline-text-3" id="text-orge94287d">
+<div id="outline-container-org28482ec" class="outline-2">
+<h2 id="org28482ec">Visualizing restaurant ratings</h2>
+<div class="outline-text-2" id="text-org28482ec">
 <p>
-Data visualization &amp; Data transformation | AUG 2022
+<code>data visualization</code>
 </p>
 
 <p>
 The clarity and aesthetics of visualizations are rarely valued in
-scientific education. Thus I spend some free time improving this aspects
-of my visualization skills. This summer my family and I (i.e. the Chulvi
-family) decided to do a small gastronomic around our hometown (i.e.
-Valencia, Spain). We evaluated restaurants based on different criteria
-which, in turn, had different weights. By the end of the tour, having
-gathered this data, I decided to create a small visualization. The goal
-was, not only to be able to tell what restaurant, but to also see what
-criteria each restaurant excelled/failed at. This would also allow the
-reader to make an informed decision, in case he was most interested in
-one criteria (e.g. food quality) than another (e.g. service quality).
+scientific education. Thus I spend some free time improving this
+aspects of my visualization skills. This summer my family and I
+(i.e. the Chulvi family) decided to do a small gastronomic around our
+hometown (i.e.  Valencia, Spain). We evaluated restaurants based on
+different criteria which, in turn, had different weights. By the end
+of the tour, having gathered this data, I decided to create a small
+visualization. The goal was, not only to be able to tell what
+restaurant, but to also see what criteria each restaurant
+excelled/failed at. This would also allow the reader to make an
+informed decision, in case he was most interested in one criteria
+(e.g. food quality) than another (e.g. service quality). The resulting
+visualization can be seen <a href="images/plot_rest.png">here</a>.
 </p>
-
-<p>
-The resulting visualization can be seen
-<a href="images/plot_rest.png">here</a>.
-</p>
-</div>
 </div>
 </div>
 </div>
