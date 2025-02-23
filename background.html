@@ -3,90 +3,13 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2025-01-13 Mon 22:20 -->
+<!-- 2025-02-23 Sun 17:38 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>My background</title>
 <meta name="generator" content="Org Mode" />
 <style type='text/css'>
 <!--/*--><![CDATA[/*><!--*/
-h2::before { content: '';
-margin-right: calc(0 * 0.22em);
-}
-h3::before { content: '';
-margin-right: calc(0 * 0.23em);
-}
-h4::before { content: '';
-margin-right: calc(0 * 0.24em);
-}
-h5::before { content: '';
-margin-right: calc(0 * 0.25em);
-}
-h6::before { content: '';
-margin-right: calc(0 * 0.26em);
-}
-h2 {
-    font-size: 130%;
-}
-
-h3 {
-    font-size: 100%;
-}
-
-
-/* for the header */
-
-/* Style the header with a grey background and some padding */
-.header {
-    /* ho */
-    overflow: hidden;
-    padding: 20px 10px;
-}
-
-/* Style the header links */
-.header a {
-    float: left;
-    color: var(--clr);
-    text-align: center;
-    padding: 12px;
-    text-decoration: none;
-    font-size: 18px;
-    line-height: 25px;
-    border-radius: 4px;
-}
-
-.link {
-    text-align: center;
-}
-.header a.title{
-    font-weight: bold;
-}
-
-/* Change the background color on mouse-over */
-.header a:hover {
-    color: pink;
-}
-
-/* Float the link section to the right */
-.header-right {
-    float: right;
-}
-
-/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
-@media screen and (max-width: 750px) {
-    .header a {
-	float: none;
-	display: block;
-	text-align: left;
-    }
-    .header a.title{
-	clear: right;
-    }
-    .header-right {
-	float: none;
-    }
-}
-
 /* nice-org-html.css
 ;;==============================================================================
 ;; Copyright (C) 2024, Ewan Townshend
@@ -138,15 +61,17 @@ body {
     align-items: center;
     justify-content: center;
     font-family:
-	system-ui,
 	-apple-system,
-	'Segoe UI',
+	BlinkMacSystemFont,
+	segoe ui,
 	Roboto,
-	Helvetica,
-	Arial,
+	Oxygen,
+	Ubuntu,
+	Cantarell,
+	open sans,
+	helvetica neue,
 	sans-serif,
-	'Apple Color Emoji',
-	'Segoe UI Emoji';
+	system-ui
 }
 
 #preamble,
@@ -253,6 +178,11 @@ body[data-mode='dark'] {
   --clr-string: #FFA07A;
 }
 
+/* exceptions for badly rendering themes **************************************/
+body[data-theme='leuven'],
+body[data-theme='leuven-dark'] {
+    --bg-code: var(--bg-block);
+}
 
 /* ootb page layout ***********************************************************/
 #view-controls {
@@ -397,9 +327,6 @@ h1 {
   color: var(--clr-title);
   text-align: center;
 }
-h2, h3, h4, h5, h6, h7 {
-  font-family: Sans Serif;
-}
 h2 {
     margin-top: 2rem;
     margin-bottom: 1rem;
@@ -411,17 +338,6 @@ code {
   border-radius: 2px;
   padding-left: 5px;
   padding-right: 5px;
-}
-
-pre {
-    padding: 1rem;
-    border: 1px solid var(--bc-block);
-    border-radius: 0.5rem;
-    background: var(--bg-block);
-    font-size: 0.9rem;
-    overflow-x: auto;
-    -ms-overflow-style: none;
-    scrollbar-width: thin;
 }
 
 pre::-webkit-scrollbar {
@@ -480,6 +396,22 @@ a:hover {
 
 img {
   max-width: 100%;
+}
+
+pre {
+    padding: 1rem;
+    border: 1px solid var(--bc-block);
+    border-radius: 0.5rem;
+    background: var(--bg-block);
+    font-size: 0.9rem;
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: thin;
+}
+
+pre.src {
+    border: none !important;
+    background: var(--bg-code) !important;
 }
 
 .org-src-wrapper {
@@ -564,6 +496,313 @@ img {
     }
 }
 
+
+/* generated header and footer ************************************************/
+
+#generated-header,
+#generated-footer {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    line-height: 1;
+}
+.generated header {
+    top: 0;
+    left: 0;
+}
+.generated footer {
+    bottom: 0;
+    left: 0;
+}
+.generated header a,
+.generated footer a {
+    display: inline;
+    color: var(--clr-title);
+    text-decoration: none;
+    transition: color .15s ease-in;
+}
+.generated header a:hover,
+.generated footer a:hover {
+    color: var(--clr-link);
+}
+
+.generated header nav {
+    position: relative;
+    margin-top: 1rem;
+    top: 0;
+    left: 0;
+}
+.generated footer nav {
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
+
+.generated .separator {
+    display: block;
+    width: 111%;
+    margin-left: -5.5%;
+    max-width: 100vw;
+    height: 0.125rem;
+    background: var(--bg-code);
+}
+
+.generated a .nav-title,
+.generated a .nav-author {
+    display: inline;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-right: 10rem;
+}
+
+.generated .nav-title {
+    letter-spacing: .075rem;
+    font-weight: 500;
+}
+
+.generated .nav-toggle {
+    display: none;
+}
+.generated .nav-button {
+    display: none;
+}
+.generated .nav-list {
+    overflow-y: hidden;
+    display: block;
+    /*display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;*/
+    float: right;
+    list-style: none;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.generated .nav-item {
+    position: relative;
+    float: left;
+    margin: 0;
+}
+.generated .nav-link {
+    position: relative;
+    float: right;
+    margin-left: 2rem;
+    margin-right: 0rem;
+}
+
+.generated .nav-toggle {
+    max-height: 0;
+    visibility: hidden;
+    overflow-y: hidden;
+}
+
+.generated header .separator {
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+
+.generated footer .separator {
+    margin-bottom: 1rem;
+    margin-top: 0;
+}
+
+.generated .menu-sep {
+    display: none;
+    max-height: 0;
+    overflow-y: hidden;
+    transition: max-height 0.2s ease;
+}
+
+.generated footer {
+    padding-bottom: 1rem;
+}
+
+
+
+.generated.compact footer {
+    padding-bottom: 0;
+}
+
+.generated.compact header .separator {
+    margin-top: 0;
+    margin-bottom:0;
+}
+.generated.compact footer .separator {
+	margin-bottom: 1rem;
+}
+
+.generated.compact .nav-toggle {
+    visibility: visible;
+}
+
+.generated.compact .nav-toggle + label span::before {
+    transition: all 0.2s ease-in;
+}
+.generated.compact .nav-toggle:checked + label span::before {
+    transform: translateX(0.04rem) translateY(-0.25rem) rotate(90deg);
+    transition: all 0.2s ease;
+}
+
+.generated.compact .menu-sep {
+    display: flex;
+    max-height: 0rem;
+}
+.generated.compact .nav-toggle:checked + label + .menu-sep {
+    display: block;
+    position: relative;
+    max-height: 1rem;
+    transition: max-height 0.2s ease;
+}
+
+.generated.compact .nav-list {
+    float: none !important;
+    position: relative;
+    display: block;
+    padding-left: 0;
+    padding-right: 0;
+    z-index: 5;
+    width: 100%;
+    height: auto;
+    max-height: 0;
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    transition: max-height 0.2s ease;
+}
+.generated.compact .nav-toggle:checked + label ~ .nav-list {
+    display: block;
+    max-height: 100rem;
+    overflow-y: hidden;
+}
+.generated.compact header .nav-toggle:checked + label ~ .nav-list {
+    transition: max-height 0.2s ease;
+}
+
+.generated.compact .nav-button {
+    display: inline;
+    position: relative;
+    float: right;
+    font-size: 1rem;
+}
+.generated.compact .nav-button span::before {
+    display: inline-block;
+    content: '\2807';
+    font-size: 2rem;
+    transform: translateX(0.25rem) translateY(-0.5rem);
+}
+
+.generated.compact .nav-item {
+    float: none !important;
+    text-align: center !important;
+}
+.generated.compact .nav-link {
+    line-height: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    float: none !important;
+}
+
+.generated.compact footer .separator.menu-sep {
+    margin-bottom: -1rem;
+}
+
+
+
+.hidden {
+    display: none;
+}
+
+.collapsible:hover {
+    cursor: pointer;
+}
+
+.collapsible.collapsed::after {
+    display: inline-block;
+    content: '...';
+}
+
+
+h6::before { content: '';
+margin-right: calc(0 * 0.26em);
+}
+h5::before { content: '';
+margin-right: calc(0 * 0.25em);
+}
+h4::before { content: '';
+margin-right: calc(0 * 0.24em);
+}
+h3::before { content: '';
+margin-right: calc(0 * 0.23em);
+}
+h2::before { content: '';
+margin-right: calc(0 * 0.22em);
+}
+. {
+    font-family: "Consolas", "Liberation Mono", "Courier", sans-serif;
+}
+
+h2 {
+    font-size: 130%;
+}
+
+h3 {
+    font-size: 100%;
+}
+
+
+/* for the header */
+
+/* Style the header with a grey background and some padding */
+.header {
+    /* ho */
+    overflow: hidden;
+    padding: 20px 10px;
+}
+
+/* Style the header links */
+.header a {
+    float: left;
+    color: var(--clr);
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+.link {
+    text-align: center;
+}
+.header a.title{
+    font-weight: bold;
+}
+
+/* Change the background color on mouse-over */
+.header a:hover {
+    color: pink;
+}
+
+/* Float the link section to the right */
+.header-right {
+    float: right;
+}
+
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 750px) {
+    .header a {
+	float: none;
+	display: block;
+	text-align: left;
+    }
+    .header a.title{
+	clear: right;
+    }
+    .header-right {
+	float: none;
+    }
+}
+
 /*]]>*/-->
 </style>
 </head>
@@ -586,19 +825,19 @@ img {
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org7861c0e">Professional career</a>
+<li><a href="#org7e31c40">Professional career</a>
 <ul>
-<li><a href="#org6ac12c3">[FEB 2024 - Present] Data Scientist - MLP</a></li>
-<li><a href="#orgc718718">[JAN 2023 - FEB 2024] Teacher Assistant - University of Amsterdam</a></li>
-<li><a href="#orgd65ba77">[MAY 2021 - JUN 2022] Junior Lecturer - Athena Studies</a></li>
-<li><a href="#org0f07131">[FEB 2020 - NOV 2021] Editor - Spiegeloog</a></li>
+<li><a href="#orgd00eeb7">[FEB 2024 - Present] Data Scientist - MLP</a></li>
+<li><a href="#org698714f">[JAN 2023 - FEB 2024] Teacher Assistant - University of Amsterdam</a></li>
+<li><a href="#org54f2407">[MAY 2021 - JUN 2022] Junior Lecturer - Athena Studies</a></li>
+<li><a href="#org6ea7867">[FEB 2020 - NOV 2021] Editor - Spiegeloog</a></li>
 </ul>
 </li>
-<li><a href="#org07a22b5">Academic career</a>
+<li><a href="#orgfe2586f">Academic career</a>
 <ul>
-<li><a href="#orgfac5a1f">[SEP 2022 - JAN 2023] Computational Science Minor - University of Amsterdam</a></li>
-<li><a href="#orgf453be1">[SEP 2019 - JUN 2022] Psychology Major - University of Amsterdam</a></li>
-<li><a href="#orga6d1490">[SEP 2017 - JUN 2019] International Baccalaureate (IB)</a></li>
+<li><a href="#org34d39ba">[SEP 2022 - JAN 2023] Computational Science Minor - University of Amsterdam</a></li>
+<li><a href="#orga33cf0f">[SEP 2019 - JUN 2022] Psychology Major - University of Amsterdam</a></li>
+<li><a href="#orgdc15547">[SEP 2017 - JUN 2019] International Baccalaureate (IB)</a></li>
 </ul>
 </li>
 </ul>
@@ -610,13 +849,13 @@ roles, as well as my academic career. Too long? Click on <b>☰</b> for an
 overview.
 </p>
 
-<div id="outline-container-org7861c0e" class="outline-2">
-<h2 id="org7861c0e">Professional career</h2>
-<div class="outline-text-2" id="text-org7861c0e">
+<div id="outline-container-org7e31c40" class="outline-2">
+<h2 id="org7e31c40">Professional career</h2>
+<div class="outline-text-2" id="text-org7e31c40">
 </div>
-<div id="outline-container-org6ac12c3" class="outline-3">
-<h3 id="org6ac12c3">[FEB 2024 - Present] Data Scientist - MLP</h3>
-<div class="outline-text-3" id="text-org6ac12c3">
+<div id="outline-container-orgd00eeb7" class="outline-3">
+<h3 id="orgd00eeb7">[FEB 2024 - Present] Data Scientist - MLP</h3>
+<div class="outline-text-3" id="text-orgd00eeb7">
 <p>
 <a href="https://www.mlprograms.com/">MLP</a> stands for Machine Learning Programs😮 and thats what we do. In
 particular we use ML to help actors in the insurance sector better
@@ -630,9 +869,9 @@ infrastructure).
 </div>
 </div>
 
-<div id="outline-container-orgc718718" class="outline-3">
-<h3 id="orgc718718">[JAN 2023 - FEB 2024] Teacher Assistant - University of Amsterdam</h3>
-<div class="outline-text-3" id="text-orgc718718">
+<div id="outline-container-org698714f" class="outline-3">
+<h3 id="org698714f">[JAN 2023 - FEB 2024] Teacher Assistant - University of Amsterdam</h3>
+<div class="outline-text-3" id="text-org698714f">
 <p>
 Guiding practical sessions, developing teaching material and grading
 for the <a href="https://www.uva.nl/en/programmes/bachelors/computational-social-science/study-programme/study-programme.html#Year-1">Computational Social Sciences</a> bachelor at the University of
@@ -643,9 +882,9 @@ social impact.
 </div>
 </div>
 
-<div id="outline-container-orgd65ba77" class="outline-3">
-<h3 id="orgd65ba77">[MAY 2021 - JUN 2022] Junior Lecturer - Athena Studies</h3>
-<div class="outline-text-3" id="text-orgd65ba77">
+<div id="outline-container-org54f2407" class="outline-3">
+<h3 id="org54f2407">[MAY 2021 - JUN 2022] Junior Lecturer - Athena Studies</h3>
+<div class="outline-text-3" id="text-org54f2407">
 <p>
 <a href="https://athenastudies.co.uk/">Athena Studies</a> is the number one company offering study assistance to
 university students in the Netherlands. I was in charge of different
@@ -657,9 +896,9 @@ enough for my boss' boss to <a href="documents/india_letter.pdf">congratulate</a
 </div>
 </div>
 
-<div id="outline-container-org0f07131" class="outline-3">
-<h3 id="org0f07131">[FEB 2020 - NOV 2021] Editor - Spiegeloog</h3>
-<div class="outline-text-3" id="text-org0f07131">
+<div id="outline-container-org6ea7867" class="outline-3">
+<h3 id="org6ea7867">[FEB 2020 - NOV 2021] Editor - Spiegeloog</h3>
+<div class="outline-text-3" id="text-org6ea7867">
 <p>
 During the my first years in university I was an editor for the
 Psychology faculty's magazine. There I wrote a few articles and
@@ -670,13 +909,13 @@ over journalism, but you can still <a href="https://www.spiegeloog.amsterdam/aut
 </div>
 </div>
 
-<div id="outline-container-org07a22b5" class="outline-2">
-<h2 id="org07a22b5">Academic career</h2>
-<div class="outline-text-2" id="text-org07a22b5">
+<div id="outline-container-orgfe2586f" class="outline-2">
+<h2 id="orgfe2586f">Academic career</h2>
+<div class="outline-text-2" id="text-orgfe2586f">
 </div>
-<div id="outline-container-orgfac5a1f" class="outline-3">
-<h3 id="orgfac5a1f">[SEP 2022 - JAN 2023] Computational Science Minor - University of Amsterdam</h3>
-<div class="outline-text-3" id="text-orgfac5a1f">
+<div id="outline-container-org34d39ba" class="outline-3">
+<h3 id="org34d39ba">[SEP 2022 - JAN 2023] Computational Science Minor - University of Amsterdam</h3>
+<div class="outline-text-3" id="text-org34d39ba">
 <p>
 I finished the minor with a GPA of 8.75/10 (you may check the
 <a href="./documents/transcript_psych.pdf">transcripts</a>👀). The program included courses in programming for data
@@ -687,30 +926,26 @@ underpinnings of data analysis and statistical methods.
 </div>
 
 
-<div id="outline-container-orgf453be1" class="outline-3">
-<h3 id="orgf453be1">[SEP 2019 - JUN 2022] Psychology Major - University of Amsterdam</h3>
-<div class="outline-text-3" id="text-orgf453be1">
+<div id="outline-container-orga33cf0f" class="outline-3">
+<h3 id="orga33cf0f">[SEP 2019 - JUN 2022] Psychology Major - University of Amsterdam</h3>
+<div class="outline-text-3" id="text-orga33cf0f">
 <p>
 I specialized in Research Methods and Statistics, which filled my
 coursework with scientific data analysis, programming and modeling. I
-also followed
-a <a href="https://www.merriam-webster.com/dictionary/gamut">gamut</a>
-of courses on behavioral change and social psychology. I graduated
-with a GPA of 8.19/10 with Honours (+30ECS) and distinction (you may
-check
-the <a href="./documents/transcript_psych.pdf">transcripts</a>👀). My
-thesis had by title <i>Using Social Media Analytics to Explore
-Political Involvement and Polarization</i>, which involved a fair bit
-NLP and statistical analysis. My supervisor, Prof. Dr. Han van der
-Maas, was kind enough to award me a 9.5/10 and write me
-a <a href="./documents/han_letter.pdf">recommendation letter</a>.
+also followed a <a href="https://www.merriam-webster.com/dictionary/gamut">gamut</a> of courses on behavioral change and social
+psychology. I graduated with a GPA of 8.19/10 with Honours (+30ECS)
+and distinction (you may check the <a href="./documents/transcript_psych.pdf">transcripts</a>👀). My thesis had by
+title <i>Using Social Media Analytics to Explore Political Involvement
+and Polarization</i>, which involved a fair bit NLP and statistical
+analysis. My supervisor, Prof. Dr. Han van der Maas, was kind enough
+to award me a 9.5/10 and write me a <a href="./documents/han_letter.pdf">recommendation letter</a>.
 </p>
 </div>
 </div>
 
-<div id="outline-container-orga6d1490" class="outline-3">
-<h3 id="orga6d1490">[SEP 2017 - JUN 2019] International Baccalaureate (IB)</h3>
-<div class="outline-text-3" id="text-orga6d1490">
+<div id="outline-container-orgdc15547" class="outline-3">
+<h3 id="orgdc15547">[SEP 2017 - JUN 2019] International Baccalaureate (IB)</h3>
+<div class="outline-text-3" id="text-orgdc15547">
 <p>
 During my high school years, I pursued the International Baccalaureate
 (IB) program, achieving a GPA of 41 out of a possible 45. My courses
@@ -724,7 +959,11 @@ Management, Spanish Literature, French, Mathematics, and History.
 <div id="postamble" class="status">
 <script type="text/javascript">
 <!--/*--><![CDATA[/*><!--*/
-document.cookie = 'theme-mode=dark'
+if (!document.cookie.split('; ').find(r => r.startsWith('mode'))) {
+document.cookie = 'mode=dark'
+}
+document.cookie = 'light=tsdh-light'
+document.cookie = 'dark=tsdh-dark'
 /*
 ;; nice-org-html.js
 ;;==============================================================================
@@ -755,32 +994,60 @@ document.cookie = 'theme-mode=dark'
  */
 
 const preamble = document.getElementById("preamble");
+const content = document.getElementById("content");
+const postamble = document.getElementById("postamble");
+
 const controls = document.getElementById("view-controls");
 const toggleTocBtn = document.getElementById("toggle-toc");
 const gotoTopBtn = document.getElementById("goto-top");
 const toggleModeBtn = document.getElementById("toggle-mode");
-const content = document.getElementById("content");
 const toc = document.getElementById("table-of-contents");
+
+// Get and parse options passed in cookie string
+const optCookie = document.cookie.split('; ').find(r => r.startsWith('options'));
+const options = {};
+if (optCookie) {
+  optCookie.split('=')[1].split('__').forEach(pair => {
+    const [key, val] = pair.split(':');
+    if (key && val) {
+      options[key] = val;
+    }
+  })
+}
 
 // Move sticky control bar (injected within preamble)
 document.body.insertBefore(controls, content);
 
-function setMode(mode) {
-  document.body.dataset.mode = mode;
-  toggleModeBtn.innerHTML = (mode === 'light') ? '&#9789;' : '&#9788;';
-  document.cookie = 'theme-mode=' + mode;
+// Mode handling
+function getMode() {
+  let cookie = document.cookie.split('; ').find(r => r.startsWith('mode'))
+  return cookie && cookie.split("=")[1];
 }
 
-// Set mode based on stored cookie
-let cookie = document.cookie.split('; ').find(r => r.startsWith('theme-mode'))
-let mode = cookie ? cookie.split('=')[1] : 'dark'; // Default
-setMode(mode);
+function setMode(mode) {
+  document.body.dataset.mode = mode;
+  let thmCookie = document.cookie.split('; ').find(r => r.startsWith(mode));
+  document.body.dataset.theme = thmCookie ? thmCookie.split('=')[1] : 'unknown';
+  toggleModeBtn.innerHTML = (mode === 'light') ? '&#9789;' : '&#9788;';
+  document.cookie = 'mode=' + mode;
+}
+
+// Initially, set mode based on stored cookie
+let mode = getMode();
+if (mode && ["light", "dark"].includes(mode)) {
+  setMode(mode);
+} else {  
+  let prop = "prefers-color-scheme";
+  let pref = (mode === "query") && window.matchMedia &&
+    ["light", "dark"].find(s => window.matchMedia(`(${prop}: ${s})`).matches);
+  setMode(pref || "dark"); // fallback: dark
+}
 
 // Mode toggling
 toggleModeBtn.addEventListener('click', () => {
-  mode = document.body.dataset.mode === 'dark' ? 'light' : 'dark';
-  setMode(mode);
+  setMode(document.body.dataset.mode === 'dark' ? 'light' : 'dark');
 })
+
 
 // Jump to top
 let scrollY = document.documentElement.scrollTop;
@@ -879,6 +1146,106 @@ function copyTextToClipboard(text) {
   return res;
 }
 
+// Handle the default header / footer drawers
+const header = document.getElementById("generated-header");
+const footer = document.getElementById("generated-footer");
+
+if (header) {
+  let toggle = header.querySelector("header nav input.nav-toggle");
+  if (toggle) { toggle.checked = false; }
+}
+if (footer) {
+  let nav = footer.querySelector("nav");
+  let toggle = nav && nav.querySelector(".nav-toggle");
+  let navList = nav && nav.querySelector(".nav-list");
+  let navElem = navList && [...navList.querySelectorAll(".nav-item")];
+  let numLink = navElem && navElem.length;
+  if (numLink) {
+    toggle.checked = false;
+    toggle.addEventListener('change', () => {
+      if (toggle.checked) {
+	setTimeout(() => window.scrollTo({
+	  behavior: 'smooth',
+	  top: document.body.scrollHeight	  
+	}), 88);
+      }
+   });
+  }
+}
+
+function autoCompact() {
+  var anchor, links, overlap, trivial;
+  const domCompute = (node) => {
+    if (node) {
+      anchor = node.querySelector('.nav-title, .nav-author');
+      links = node.querySelector('.nav-list');
+      overlap = links.offsetLeft - 5 <= anchor.offsetLeft + anchor.offsetWidth;	
+      trivial = links.offsetLeft === anchor.offsetLeft;
+    }
+  };
+  let mediaMatch = window.matchMedia('(max-width: 768px)').matches;
+  [header, footer].forEach(e => {
+    if (e) {
+      if (mediaMatch) {
+	e.classList.add('compact');
+      } else {
+	domCompute(e);
+	if (overlap && !trivial) {
+	  e.classList.add('compact');
+	} else {	
+	  let clone = e.cloneNode(true);
+	  clone.style.top = '-2000px';
+	  clone.style.maxHeight = '0px';
+	  clone.classList.remove('compact');
+	  e.parentNode.insertBefore(clone, e);
+	  domCompute(clone);
+	  let toggle = e.querySelector('.nav-toggle');
+	  if (!overlap && toggle && !toggle.checked) {
+	    e.classList.remove('compact');
+	  }
+	  e.parentNode.removeChild(clone);
+	}
+      }
+    }
+  })
+}
+
+if ((header || footer)) {
+  if (options.hasOwnProperty('layout')) {
+    [header, footer].forEach(e => e ? e.classList.add(options.layout) : null);
+  } else {
+    autoCompact();
+    window.addEventListener('resize', autoCompact);
+  }
+}
+
+
+if (options.hasOwnProperty('collapsing') && options.collapsing == 't') {
+  let levels = [2, 3, 4, 5, 6];
+  let containerPrefix = 'outline-container-';
+  levels.forEach(l => {
+    let containers = [...document.querySelectorAll(`.outline-${l}`)];
+    containers.forEach(c => {
+      let id = c.id.slice(containerPrefix.length);
+      let headline = document.getElementById(id);
+      let siblings = [...c.children].filter(child => child.id != id);
+      headline.classList.add('collapsible');
+      headline.addEventListener('click', () => {	
+	if (headline.classList.contains('collapsed')) {
+	  headline.classList.remove('collapsed');
+	  siblings.forEach(child => {
+	    child.classList.remove('hidden');
+	  });	  
+	} else {
+	  headline.classList.add('collapsed');
+	  siblings.forEach(child => {
+	    child.classList.add('hidden');
+	  });
+	}
+      })
+    })
+  })
+}
 /*]]>*/-->
 </script><div hidden>Generated by: https://github.com/ewantown/nice-org-html</div>
 </div>

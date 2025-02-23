@@ -3,90 +3,13 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2025-01-13 Mon 22:20 -->
+<!-- 2025-02-23 Sun 17:38 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>My projects</title>
 <meta name="generator" content="Org Mode" />
 <style type='text/css'>
 <!--/*--><![CDATA[/*><!--*/
-h2::before { content: '';
-margin-right: calc(0 * 0.22em);
-}
-h3::before { content: '';
-margin-right: calc(0 * 0.23em);
-}
-h4::before { content: '';
-margin-right: calc(0 * 0.24em);
-}
-h5::before { content: '';
-margin-right: calc(0 * 0.25em);
-}
-h6::before { content: '';
-margin-right: calc(0 * 0.26em);
-}
-h2 {
-    font-size: 130%;
-}
-
-h3 {
-    font-size: 100%;
-}
-
-
-/* for the header */
-
-/* Style the header with a grey background and some padding */
-.header {
-    /* ho */
-    overflow: hidden;
-    padding: 20px 10px;
-}
-
-/* Style the header links */
-.header a {
-    float: left;
-    color: var(--clr);
-    text-align: center;
-    padding: 12px;
-    text-decoration: none;
-    font-size: 18px;
-    line-height: 25px;
-    border-radius: 4px;
-}
-
-.link {
-    text-align: center;
-}
-.header a.title{
-    font-weight: bold;
-}
-
-/* Change the background color on mouse-over */
-.header a:hover {
-    color: pink;
-}
-
-/* Float the link section to the right */
-.header-right {
-    float: right;
-}
-
-/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
-@media screen and (max-width: 750px) {
-    .header a {
-	float: none;
-	display: block;
-	text-align: left;
-    }
-    .header a.title{
-	clear: right;
-    }
-    .header-right {
-	float: none;
-    }
-}
-
 /* nice-org-html.css
 ;;==============================================================================
 ;; Copyright (C) 2024, Ewan Townshend
@@ -138,15 +61,17 @@ body {
     align-items: center;
     justify-content: center;
     font-family:
-	system-ui,
 	-apple-system,
-	'Segoe UI',
+	BlinkMacSystemFont,
+	segoe ui,
 	Roboto,
-	Helvetica,
-	Arial,
+	Oxygen,
+	Ubuntu,
+	Cantarell,
+	open sans,
+	helvetica neue,
 	sans-serif,
-	'Apple Color Emoji',
-	'Segoe UI Emoji';
+	system-ui
 }
 
 #preamble,
@@ -253,6 +178,11 @@ body[data-mode='dark'] {
   --clr-string: #FFA07A;
 }
 
+/* exceptions for badly rendering themes **************************************/
+body[data-theme='leuven'],
+body[data-theme='leuven-dark'] {
+    --bg-code: var(--bg-block);
+}
 
 /* ootb page layout ***********************************************************/
 #view-controls {
@@ -397,9 +327,6 @@ h1 {
   color: var(--clr-title);
   text-align: center;
 }
-h2, h3, h4, h5, h6, h7 {
-  font-family: Sans Serif;
-}
 h2 {
     margin-top: 2rem;
     margin-bottom: 1rem;
@@ -411,17 +338,6 @@ code {
   border-radius: 2px;
   padding-left: 5px;
   padding-right: 5px;
-}
-
-pre {
-    padding: 1rem;
-    border: 1px solid var(--bc-block);
-    border-radius: 0.5rem;
-    background: var(--bg-block);
-    font-size: 0.9rem;
-    overflow-x: auto;
-    -ms-overflow-style: none;
-    scrollbar-width: thin;
 }
 
 pre::-webkit-scrollbar {
@@ -480,6 +396,22 @@ a:hover {
 
 img {
   max-width: 100%;
+}
+
+pre {
+    padding: 1rem;
+    border: 1px solid var(--bc-block);
+    border-radius: 0.5rem;
+    background: var(--bg-block);
+    font-size: 0.9rem;
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: thin;
+}
+
+pre.src {
+    border: none !important;
+    background: var(--bg-code) !important;
 }
 
 .org-src-wrapper {
@@ -564,6 +496,313 @@ img {
     }
 }
 
+
+/* generated header and footer ************************************************/
+
+#generated-header,
+#generated-footer {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    line-height: 1;
+}
+.generated header {
+    top: 0;
+    left: 0;
+}
+.generated footer {
+    bottom: 0;
+    left: 0;
+}
+.generated header a,
+.generated footer a {
+    display: inline;
+    color: var(--clr-title);
+    text-decoration: none;
+    transition: color .15s ease-in;
+}
+.generated header a:hover,
+.generated footer a:hover {
+    color: var(--clr-link);
+}
+
+.generated header nav {
+    position: relative;
+    margin-top: 1rem;
+    top: 0;
+    left: 0;
+}
+.generated footer nav {
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
+
+.generated .separator {
+    display: block;
+    width: 111%;
+    margin-left: -5.5%;
+    max-width: 100vw;
+    height: 0.125rem;
+    background: var(--bg-code);
+}
+
+.generated a .nav-title,
+.generated a .nav-author {
+    display: inline;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-right: 10rem;
+}
+
+.generated .nav-title {
+    letter-spacing: .075rem;
+    font-weight: 500;
+}
+
+.generated .nav-toggle {
+    display: none;
+}
+.generated .nav-button {
+    display: none;
+}
+.generated .nav-list {
+    overflow-y: hidden;
+    display: block;
+    /*display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;*/
+    float: right;
+    list-style: none;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.generated .nav-item {
+    position: relative;
+    float: left;
+    margin: 0;
+}
+.generated .nav-link {
+    position: relative;
+    float: right;
+    margin-left: 2rem;
+    margin-right: 0rem;
+}
+
+.generated .nav-toggle {
+    max-height: 0;
+    visibility: hidden;
+    overflow-y: hidden;
+}
+
+.generated header .separator {
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+
+.generated footer .separator {
+    margin-bottom: 1rem;
+    margin-top: 0;
+}
+
+.generated .menu-sep {
+    display: none;
+    max-height: 0;
+    overflow-y: hidden;
+    transition: max-height 0.2s ease;
+}
+
+.generated footer {
+    padding-bottom: 1rem;
+}
+
+
+
+.generated.compact footer {
+    padding-bottom: 0;
+}
+
+.generated.compact header .separator {
+    margin-top: 0;
+    margin-bottom:0;
+}
+.generated.compact footer .separator {
+	margin-bottom: 1rem;
+}
+
+.generated.compact .nav-toggle {
+    visibility: visible;
+}
+
+.generated.compact .nav-toggle + label span::before {
+    transition: all 0.2s ease-in;
+}
+.generated.compact .nav-toggle:checked + label span::before {
+    transform: translateX(0.04rem) translateY(-0.25rem) rotate(90deg);
+    transition: all 0.2s ease;
+}
+
+.generated.compact .menu-sep {
+    display: flex;
+    max-height: 0rem;
+}
+.generated.compact .nav-toggle:checked + label + .menu-sep {
+    display: block;
+    position: relative;
+    max-height: 1rem;
+    transition: max-height 0.2s ease;
+}
+
+.generated.compact .nav-list {
+    float: none !important;
+    position: relative;
+    display: block;
+    padding-left: 0;
+    padding-right: 0;
+    z-index: 5;
+    width: 100%;
+    height: auto;
+    max-height: 0;
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    transition: max-height 0.2s ease;
+}
+.generated.compact .nav-toggle:checked + label ~ .nav-list {
+    display: block;
+    max-height: 100rem;
+    overflow-y: hidden;
+}
+.generated.compact header .nav-toggle:checked + label ~ .nav-list {
+    transition: max-height 0.2s ease;
+}
+
+.generated.compact .nav-button {
+    display: inline;
+    position: relative;
+    float: right;
+    font-size: 1rem;
+}
+.generated.compact .nav-button span::before {
+    display: inline-block;
+    content: '\2807';
+    font-size: 2rem;
+    transform: translateX(0.25rem) translateY(-0.5rem);
+}
+
+.generated.compact .nav-item {
+    float: none !important;
+    text-align: center !important;
+}
+.generated.compact .nav-link {
+    line-height: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    float: none !important;
+}
+
+.generated.compact footer .separator.menu-sep {
+    margin-bottom: -1rem;
+}
+
+
+
+.hidden {
+    display: none;
+}
+
+.collapsible:hover {
+    cursor: pointer;
+}
+
+.collapsible.collapsed::after {
+    display: inline-block;
+    content: '...';
+}
+
+
+h6::before { content: '';
+margin-right: calc(0 * 0.26em);
+}
+h5::before { content: '';
+margin-right: calc(0 * 0.25em);
+}
+h4::before { content: '';
+margin-right: calc(0 * 0.24em);
+}
+h3::before { content: '';
+margin-right: calc(0 * 0.23em);
+}
+h2::before { content: '';
+margin-right: calc(0 * 0.22em);
+}
+. {
+    font-family: "Consolas", "Liberation Mono", "Courier", sans-serif;
+}
+
+h2 {
+    font-size: 130%;
+}
+
+h3 {
+    font-size: 100%;
+}
+
+
+/* for the header */
+
+/* Style the header with a grey background and some padding */
+.header {
+    /* ho */
+    overflow: hidden;
+    padding: 20px 10px;
+}
+
+/* Style the header links */
+.header a {
+    float: left;
+    color: var(--clr);
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+.link {
+    text-align: center;
+}
+.header a.title{
+    font-weight: bold;
+}
+
+/* Change the background color on mouse-over */
+.header a:hover {
+    color: pink;
+}
+
+/* Float the link section to the right */
+.header-right {
+    float: right;
+}
+
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 750px) {
+    .header a {
+	float: none;
+	display: block;
+	text-align: left;
+    }
+    .header a.title{
+	clear: right;
+    }
+    .header-right {
+	float: none;
+    }
+}
+
 /*]]>*/-->
 </style>
 </head>
@@ -586,14 +825,14 @@ img {
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org7793f13">Modeling information diffusion in empirical and theoretical social networks</a></li>
-<li><a href="#orga959fea">Stock value prediction based on sentiment analysis of financial articles</a></li>
-<li><a href="#orgf80f99d">Measuring political involvement in Twitter using SVM and followers network</a></li>
-<li><a href="#org29bbc90">Link between political involvement and polarization in social media</a></li>
-<li><a href="#org669a64a">Interactive map of drug consumption in the European Union</a></li>
-<li><a href="#org8d0f173">Evaluating Spotify's song valence metric</a></li>
-<li><a href="#org08b800b">Dimensionality and reliability of an original questionnaire</a></li>
-<li><a href="#org0855e67">Visualizing restaurant ratings</a></li>
+<li><a href="#org6854d02">Modeling information diffusion in empirical and theoretical social networks</a></li>
+<li><a href="#org66c50ef">Stock value prediction based on sentiment analysis of financial articles</a></li>
+<li><a href="#orgcacea04">Measuring political involvement in Twitter using SVM and followers network</a></li>
+<li><a href="#org41b9eab">Link between political involvement and polarization in social media</a></li>
+<li><a href="#orgb1b0e17">Interactive map of drug consumption in the European Union</a></li>
+<li><a href="#org78cd530">Evaluating Spotify's song valence metric</a></li>
+<li><a href="#org1e1d4d0">Dimensionality and reliability of an original questionnaire</a></li>
+<li><a href="#orgf37b6e4">Visualizing restaurant ratings</a></li>
 </ul>
 </div>
 </div>
@@ -603,9 +842,9 @@ past. Only projects not protected under NDA are shown, thus most come
 from my studies. Too long? Click on <b>☰</b> for an overview.
 </p>
 
-<div id="outline-container-org7793f13" class="outline-2">
-<h2 id="org7793f13">Modeling information diffusion in empirical and theoretical social networks</h2>
-<div class="outline-text-2" id="text-org7793f13">
+<div id="outline-container-org6854d02" class="outline-2">
+<h2 id="org6854d02">Modeling information diffusion in empirical and theoretical social networks</h2>
+<div class="outline-text-2" id="text-org6854d02">
 <p>
 <code>network analysis</code> <code>hypothesis testing</code> <code>information diffusion modeling</code>
 </p>
@@ -626,9 +865,9 @@ measurements and significance tests. Checks the project's <a href="https://githu
 </div>
 </div>
 
-<div id="outline-container-orga959fea" class="outline-2">
-<h2 id="orga959fea">Stock value prediction based on sentiment analysis of financial articles</h2>
-<div class="outline-text-2" id="text-orga959fea">
+<div id="outline-container-org66c50ef" class="outline-2">
+<h2 id="org66c50ef">Stock value prediction based on sentiment analysis of financial articles</h2>
+<div class="outline-text-2" id="text-org66c50ef">
 <p>
 <code>NLP</code> <code>time series</code> <code>APIs</code> <code>financial modeling</code>
 </p>
@@ -663,9 +902,9 @@ stock value. Code is available in the following <a href="https://github.com/Derk
 </div>
 </div>
 
-<div id="outline-container-orgf80f99d" class="outline-2">
-<h2 id="orgf80f99d">Measuring political involvement in Twitter using SVM and followers network</h2>
-<div class="outline-text-2" id="text-orgf80f99d">
+<div id="outline-container-orgcacea04" class="outline-2">
+<h2 id="orgcacea04">Measuring political involvement in Twitter using SVM and followers network</h2>
+<div class="outline-text-2" id="text-orgcacea04">
 <p>
 <code>SVM classifier</code> <code>NLP</code> <code>API</code> <code>model fitting</code> <code>measurement validity</code>
 </p>
@@ -695,9 +934,9 @@ rationale behind the decision and the methods used.
 </div>
 </div>
 
-<div id="outline-container-org29bbc90" class="outline-2">
-<h2 id="org29bbc90">Link between political involvement and polarization in social media</h2>
-<div class="outline-text-2" id="text-org29bbc90">
+<div id="outline-container-org41b9eab" class="outline-2">
+<h2 id="org41b9eab">Link between political involvement and polarization in social media</h2>
+<div class="outline-text-2" id="text-org41b9eab">
 <p>
 <code>attitude modeling</code> <code>NLP</code> <code>model fitting</code> <code>API</code>
 </p>
@@ -725,9 +964,9 @@ repository.</a>
 </p>
 </div>
 </div>
-<div id="outline-container-org669a64a" class="outline-2">
-<h2 id="org669a64a">Interactive map of drug consumption in the European Union</h2>
-<div class="outline-text-2" id="text-org669a64a">
+<div id="outline-container-orgb1b0e17" class="outline-2">
+<h2 id="orgb1b0e17">Interactive map of drug consumption in the European Union</h2>
+<div class="outline-text-2" id="text-orgb1b0e17">
 <p>
 <code>data visualization</code>
 </p>
@@ -746,9 +985,9 @@ repository</a>. To see a quick preview <a href="images/Map.gif">click here</a>.
 </div>
 </div>
 
-<div id="outline-container-org8d0f173" class="outline-2">
-<h2 id="org8d0f173">Evaluating Spotify's song valence metric</h2>
-<div class="outline-text-2" id="text-org8d0f173">
+<div id="outline-container-org78cd530" class="outline-2">
+<h2 id="org78cd530">Evaluating Spotify's song valence metric</h2>
+<div class="outline-text-2" id="text-org78cd530">
 <p>
 <code>data analysis</code>  <code>data collection</code>  <code>API</code>
 </p>
@@ -781,9 +1020,9 @@ visualization and interpretation of results can be seen in the following
 </div>
 </div>
 
-<div id="outline-container-org08b800b" class="outline-2">
-<h2 id="org08b800b">Dimensionality and reliability of an original questionnaire</h2>
-<div class="outline-text-2" id="text-org08b800b">
+<div id="outline-container-org1e1d4d0" class="outline-2">
+<h2 id="org1e1d4d0">Dimensionality and reliability of an original questionnaire</h2>
+<div class="outline-text-2" id="text-org1e1d4d0">
 <p>
 <code>data analysis</code> <code>data collection</code> 
 </p>
@@ -801,9 +1040,9 @@ linked to a same dimension of mistrust clustered together.
 </div>
 </div>
 
-<div id="outline-container-org0855e67" class="outline-2">
-<h2 id="org0855e67">Visualizing restaurant ratings</h2>
-<div class="outline-text-2" id="text-org0855e67">
+<div id="outline-container-orgf37b6e4" class="outline-2">
+<h2 id="orgf37b6e4">Visualizing restaurant ratings</h2>
+<div class="outline-text-2" id="text-orgf37b6e4">
 <p>
 <code>data visualization</code>
 </p>
@@ -829,7 +1068,11 @@ visualization can be seen <a href="images/plot_rest.png">here</a>.
 <div id="postamble" class="status">
 <script type="text/javascript">
 <!--/*--><![CDATA[/*><!--*/
-document.cookie = 'theme-mode=dark'
+if (!document.cookie.split('; ').find(r => r.startsWith('mode'))) {
+document.cookie = 'mode=dark'
+}
+document.cookie = 'light=tsdh-light'
+document.cookie = 'dark=tsdh-dark'
 /*
 ;; nice-org-html.js
 ;;==============================================================================
@@ -860,32 +1103,60 @@ document.cookie = 'theme-mode=dark'
  */
 
 const preamble = document.getElementById("preamble");
+const content = document.getElementById("content");
+const postamble = document.getElementById("postamble");
+
 const controls = document.getElementById("view-controls");
 const toggleTocBtn = document.getElementById("toggle-toc");
 const gotoTopBtn = document.getElementById("goto-top");
 const toggleModeBtn = document.getElementById("toggle-mode");
-const content = document.getElementById("content");
 const toc = document.getElementById("table-of-contents");
+
+// Get and parse options passed in cookie string
+const optCookie = document.cookie.split('; ').find(r => r.startsWith('options'));
+const options = {};
+if (optCookie) {
+  optCookie.split('=')[1].split('__').forEach(pair => {
+    const [key, val] = pair.split(':');
+    if (key && val) {
+      options[key] = val;
+    }
+  })
+}
 
 // Move sticky control bar (injected within preamble)
 document.body.insertBefore(controls, content);
 
-function setMode(mode) {
-  document.body.dataset.mode = mode;
-  toggleModeBtn.innerHTML = (mode === 'light') ? '&#9789;' : '&#9788;';
-  document.cookie = 'theme-mode=' + mode;
+// Mode handling
+function getMode() {
+  let cookie = document.cookie.split('; ').find(r => r.startsWith('mode'))
+  return cookie && cookie.split("=")[1];
 }
 
-// Set mode based on stored cookie
-let cookie = document.cookie.split('; ').find(r => r.startsWith('theme-mode'))
-let mode = cookie ? cookie.split('=')[1] : 'dark'; // Default
-setMode(mode);
+function setMode(mode) {
+  document.body.dataset.mode = mode;
+  let thmCookie = document.cookie.split('; ').find(r => r.startsWith(mode));
+  document.body.dataset.theme = thmCookie ? thmCookie.split('=')[1] : 'unknown';
+  toggleModeBtn.innerHTML = (mode === 'light') ? '&#9789;' : '&#9788;';
+  document.cookie = 'mode=' + mode;
+}
+
+// Initially, set mode based on stored cookie
+let mode = getMode();
+if (mode && ["light", "dark"].includes(mode)) {
+  setMode(mode);
+} else {  
+  let prop = "prefers-color-scheme";
+  let pref = (mode === "query") && window.matchMedia &&
+    ["light", "dark"].find(s => window.matchMedia(`(${prop}: ${s})`).matches);
+  setMode(pref || "dark"); // fallback: dark
+}
 
 // Mode toggling
 toggleModeBtn.addEventListener('click', () => {
-  mode = document.body.dataset.mode === 'dark' ? 'light' : 'dark';
-  setMode(mode);
+  setMode(document.body.dataset.mode === 'dark' ? 'light' : 'dark');
 })
+
 
 // Jump to top
 let scrollY = document.documentElement.scrollTop;
@@ -984,6 +1255,106 @@ function copyTextToClipboard(text) {
   return res;
 }
 
+// Handle the default header / footer drawers
+const header = document.getElementById("generated-header");
+const footer = document.getElementById("generated-footer");
+
+if (header) {
+  let toggle = header.querySelector("header nav input.nav-toggle");
+  if (toggle) { toggle.checked = false; }
+}
+if (footer) {
+  let nav = footer.querySelector("nav");
+  let toggle = nav && nav.querySelector(".nav-toggle");
+  let navList = nav && nav.querySelector(".nav-list");
+  let navElem = navList && [...navList.querySelectorAll(".nav-item")];
+  let numLink = navElem && navElem.length;
+  if (numLink) {
+    toggle.checked = false;
+    toggle.addEventListener('change', () => {
+      if (toggle.checked) {
+	setTimeout(() => window.scrollTo({
+	  behavior: 'smooth',
+	  top: document.body.scrollHeight	  
+	}), 88);
+      }
+   });
+  }
+}
+
+function autoCompact() {
+  var anchor, links, overlap, trivial;
+  const domCompute = (node) => {
+    if (node) {
+      anchor = node.querySelector('.nav-title, .nav-author');
+      links = node.querySelector('.nav-list');
+      overlap = links.offsetLeft - 5 <= anchor.offsetLeft + anchor.offsetWidth;	
+      trivial = links.offsetLeft === anchor.offsetLeft;
+    }
+  };
+  let mediaMatch = window.matchMedia('(max-width: 768px)').matches;
+  [header, footer].forEach(e => {
+    if (e) {
+      if (mediaMatch) {
+	e.classList.add('compact');
+      } else {
+	domCompute(e);
+	if (overlap && !trivial) {
+	  e.classList.add('compact');
+	} else {	
+	  let clone = e.cloneNode(true);
+	  clone.style.top = '-2000px';
+	  clone.style.maxHeight = '0px';
+	  clone.classList.remove('compact');
+	  e.parentNode.insertBefore(clone, e);
+	  domCompute(clone);
+	  let toggle = e.querySelector('.nav-toggle');
+	  if (!overlap && toggle && !toggle.checked) {
+	    e.classList.remove('compact');
+	  }
+	  e.parentNode.removeChild(clone);
+	}
+      }
+    }
+  })
+}
+
+if ((header || footer)) {
+  if (options.hasOwnProperty('layout')) {
+    [header, footer].forEach(e => e ? e.classList.add(options.layout) : null);
+  } else {
+    autoCompact();
+    window.addEventListener('resize', autoCompact);
+  }
+}
+
+
+if (options.hasOwnProperty('collapsing') && options.collapsing == 't') {
+  let levels = [2, 3, 4, 5, 6];
+  let containerPrefix = 'outline-container-';
+  levels.forEach(l => {
+    let containers = [...document.querySelectorAll(`.outline-${l}`)];
+    containers.forEach(c => {
+      let id = c.id.slice(containerPrefix.length);
+      let headline = document.getElementById(id);
+      let siblings = [...c.children].filter(child => child.id != id);
+      headline.classList.add('collapsible');
+      headline.addEventListener('click', () => {	
+	if (headline.classList.contains('collapsed')) {
+	  headline.classList.remove('collapsed');
+	  siblings.forEach(child => {
+	    child.classList.remove('hidden');
+	  });	  
+	} else {
+	  headline.classList.add('collapsed');
+	  siblings.forEach(child => {
+	    child.classList.add('hidden');
+	  });
+	}
+      })
+    })
+  })
+}
 /*]]>*/-->
 </script><div hidden>Generated by: https://github.com/ewantown/nice-org-html</div>
 </div>
