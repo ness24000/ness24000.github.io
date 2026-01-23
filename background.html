@@ -3,10 +3,11 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2025-06-17 Tue 18:28 -->
+<!-- 2026-01-23 Fri 23:03 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>My background</title>
+<meta name="author" content="Nestor" />
 <meta name="generator" content="Org Mode" />
 <style type='text/css'>
 <!--/*--><![CDATA[/*><!--*/
@@ -128,6 +129,11 @@ body {
     --clr-builtin: #e44649;
     --bg-string: initial;
     --clr-string: #50a14f;
+    --clr-note: #0969da;
+    --clr-tip: #1a7f37;
+    --clr-important: #8250df;
+    --clr-warning: #9a6700;
+    --clr-caution: #cf222e;
 }
 
 body[data-mode='light'] {
@@ -138,7 +144,7 @@ body[data-mode='light'] {
 body[data-mode='dark'] {
     background: var(--bg);
     color: var(--clr);
-    --bc-tb: #FF0000;
+    --bc-tb: #FF2D00;
     --bc-block: initial;
     --clr: #F5F5F5;
     --clr-code: initial;
@@ -176,6 +182,11 @@ body[data-mode='dark'] {
     --clr-builtin: #76EE00;
     --bg-string: initial;
     --clr-string: #FFA07A;
+    --clr-note: #0969da;
+    --clr-tip: #1a7f37;
+    --clr-important: #8250df;
+    --clr-warning: #9a6700;
+    --clr-caution: #cf222e;
 }
 
 /* exceptions for badly rendering themes **************************************/
@@ -488,6 +499,114 @@ pre {
     padding: 0.5rem;
 }
 
+.admonition {
+    margin: 0.2rem;
+    color: inherit;
+    border-left: .25rem solid;
+}
+.admonition-title {
+    margin: 0 0 0.5rem 0.5rem;
+    padding: 0.5rem 0 0 0;
+    display: flex;
+    align-items: center;
+}
+.admonition-content > p {
+    margin: 0.5rem 0 0 0.5rem;
+    padding: 0 0 0.5rem 0;
+}
+
+.admonition.note {
+    border-left-color: var(--clr-note);
+}
+.admonition-title.note {
+    color: var(--clr-note);
+}
+.admonition-title.note:before {
+    content: '';
+    display: inline-block;
+    margin-right: 0.5rem;
+    width: 1rem;
+    height: 1rem;
+    background-color: var(--clr-note);
+    mask-size: cover;    
+    mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="false"><path class="admonition-icon-note" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg>');    
+}
+.admonition-icon-note {
+    fill: var(--clr-note);
+}
+
+.admonition.tip {
+    border-left-color: var(--clr-tip);
+}
+.admonition-title.tip {
+    color: var(--clr-tip);
+}
+.admonition-title.tip:before {
+    content: '';
+    fill: var(--clr-tip);    
+    display: inline-block;
+    margin-right: 0.5rem;
+    width: 1rem;
+    height: 1rem;
+    background-color: var(--clr-tip);
+    mask-size: cover;
+    mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="false"><path d="M8 1.5c-2.363 0-4 1.69-4 3.75 0 .984.424 1.625.984 2.304l.214.253c.223.264.47.556.673.848.284.411.537.896.621 1.49a.75.75 0 0 1-1.484.211c-.04-.282-.163-.547-.37-.847a8.456 8.456 0 0 0-.542-.68c-.084-.1-.173-.205-.268-.32C3.201 7.75 2.5 6.766 2.5 5.25 2.5 2.31 4.863 0 8 0s5.5 2.31 5.5 5.25c0 1.516-.701 2.5-1.328 3.259-.095.115-.184.22-.268.319-.207.245-.383.453-.541.681-.208.3-.33.565-.37.847a.751.751 0 0 1-1.485-.212c.084-.593.337-1.078.621-1.489.203-.292.45-.584.673-.848.075-.088.147-.173.213-.253.561-.679.985-1.32.985-2.304 0-2.06-1.637-3.75-4-3.75ZM5.75 12h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5ZM6 15.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Z"></path></svg>');    
+}
+
+.admonition.important {
+    border-left-color: var(--clr-important);
+}
+.admonition-title.important {
+    color: var(--clr-important);
+}
+.admonition-title.important:before {
+    content: '';
+    fill: var(--clr-important);    
+    display: inline-block;
+    margin-right: 0.5rem;
+    width: 1rem;
+    height: 1rem;
+    background-color: var(--clr-important);
+    mask-size: cover;
+    mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="false"><path d="M0 1.75C0 .784.784 0 1.75 0h12.5C15.216 0 16 .784 16 1.75v9.5A1.75 1.75 0 0 1 14.25 13H8.06l-2.573 2.573A1.458 1.458 0 0 1 3 14.543V13H1.75A1.75 1.75 0 0 1 0 11.25Zm1.75-.25a.25.25 0 0 0-.25.25v9.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h6.5a.25.25 0 0 0 .25-.25v-9.5a.25.25 0 0 0-.25-.25Zm7 2.25v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 1.5 0ZM9 9a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"></path></svg>');    
+}
+
+.admonition.warning {
+    border-left-color: var(--clr-warning);
+}
+.admonition-title.warning {
+    color: var(--clr-warning);
+}
+.admonition-title.warning:before {
+    content: '';
+    color: var(--clr-warning);    
+    display: inline-block;
+    margin-right: 0.5rem;
+    width: 1rem;
+    height: 1rem;
+    background-color: var(--clr-warning);
+    mask-size: cover;
+    mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="false"><path d="M6.457 1.047c.659-1.234 2.427-1.234 3.086 0l6.082 11.378A1.75 1.75 0 0 1 14.082 15H1.918a1.75 1.75 0 0 1-1.543-2.575Zm1.763.707a.25.25 0 0 0-.44 0L1.698 13.132a.25.25 0 0 0 .22.368h12.164a.25.25 0 0 0 .22-.368Zm.53 3.996v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 1.5 0ZM9 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"></path></svg>');
+}
+
+
+.admonition.caution {
+    border-left-color: var(--clr-caution);
+}
+.admonition-title.caution {
+    color: var(--clr-caution);
+}
+.admonition-title.caution:before {
+    content: '';
+    fill: var(--clr-caution);    
+    display: inline-block;
+    margin-right: 0.5rem;
+    width: 1rem;
+    height: 1rem;
+    background-color: var(--clr-caution);
+    mask-size: cover;
+    mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="false"><path d="M4.47.22A.749.749 0 0 1 5 0h6c.199 0 .389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749 0 0 1-.22.53l-4.25 4.25A.749.749 0 0 1 11 16H5a.749.749 0 0 1-.53-.22L.22 11.53A.749.749 0 0 1 0 11V5c0-.199.079-.389.22-.53Zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5ZM8 4a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg>');    
+}
 /* responsive layouts *********************************************************/
 
 @media only screen and (max-width: 768px) {
@@ -838,19 +957,20 @@ h3 {
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#orgd4cccf8">Professional career</a>
+<li><a href="#org941c878">Professional career</a>
 <ul>
-<li><a href="#orgf157ea9">[FEB 2024 - MAY 2025] Data Scientist - MLP</a></li>
-<li><a href="#orgab9c1ab">[JAN 2023 - FEB 2024] Teacher Assistant - University of Amsterdam</a></li>
-<li><a href="#orge843868">[MAY 2021 - JUN 2022] Junior Lecturer - Athena Studies</a></li>
-<li><a href="#orgd7a7272">[FEB 2020 - NOV 2021] Editor - Spiegeloog</a></li>
+<li><a href="#org1de4705">[FEB 2024 - MAY 2025] Data Scientist - MLP</a></li>
+<li><a href="#org749287d">[JAN 2023 - FEB 2024] Teacher Assistant - University of Amsterdam</a></li>
+<li><a href="#org29b1c86">[MAY 2021 - JUN 2022] Junior Lecturer - Athena Studies</a></li>
+<li><a href="#org6c88f1b">[FEB 2020 - NOV 2021] Editor - Spiegeloog</a></li>
 </ul>
 </li>
-<li><a href="#orga877283">Academic career</a>
+<li><a href="#org5d2139a">Academic career</a>
 <ul>
-<li><a href="#org00cbe8a">[SEP 2022 - JAN 2023] Computational Science Minor - University of Amsterdam</a></li>
-<li><a href="#org784fcb4">[SEP 2019 - JUN 2022] Psychology Major - University of Amsterdam</a></li>
-<li><a href="#org5e3ffc7">[SEP 2017 - JUN 2019] International Baccalaureate (IB)</a></li>
+<li><a href="#org060a8fb">[SEP 2025 - present] Computer Science Major - Universitat Oberta de Catalunya (UOC)</a></li>
+<li><a href="#org6124973">[SEP 2022 - JAN 2023] Computational Science Minor - University of Amsterdam</a></li>
+<li><a href="#org285be41">[SEP 2019 - JUN 2022] Psychology Major - University of Amsterdam</a></li>
+<li><a href="#orgbd2ecc0">[SEP 2017 - JUN 2019] International Baccalaureate (IB)</a></li>
 </ul>
 </li>
 </ul>
@@ -861,13 +981,13 @@ Here you can find all about my current and previous professional
 roles, as well as my academic career. Too long? Click on <b>☰</b> for an
 overview.
 </p>
-<div id="outline-container-orgd4cccf8" class="outline-2">
-<h2 id="orgd4cccf8">Professional career</h2>
-<div class="outline-text-2" id="text-orgd4cccf8">
+<div id="outline-container-org941c878" class="outline-2">
+<h2 id="org941c878">Professional career</h2>
+<div class="outline-text-2" id="text-org941c878">
 </div>
-<div id="outline-container-orgf157ea9" class="outline-3">
-<h3 id="orgf157ea9">[FEB 2024 - MAY 2025] Data Scientist - MLP</h3>
-<div class="outline-text-3" id="text-orgf157ea9">
+<div id="outline-container-org1de4705" class="outline-3">
+<h3 id="org1de4705">[FEB 2024 - MAY 2025] Data Scientist - MLP</h3>
+<div class="outline-text-3" id="text-org1de4705">
 <p>
 <a href="https://www.mlprograms.com/">MLP</a> stands for Machine Learning Programs😮 and thats what we do. In
 particular we use ML to help actors in the insurance sector better
@@ -880,9 +1000,9 @@ infrastructure).
 </p>
 </div>
 </div>
-<div id="outline-container-orgab9c1ab" class="outline-3">
-<h3 id="orgab9c1ab">[JAN 2023 - FEB 2024] Teacher Assistant - University of Amsterdam</h3>
-<div class="outline-text-3" id="text-orgab9c1ab">
+<div id="outline-container-org749287d" class="outline-3">
+<h3 id="org749287d">[JAN 2023 - FEB 2024] Teacher Assistant - University of Amsterdam</h3>
+<div class="outline-text-3" id="text-org749287d">
 <p>
 Guiding practical sessions, developing teaching material and grading
 for the <a href="https://www.uva.nl/en/programmes/bachelors/computational-social-science/study-programme/study-programme.html#Year-1">Computational Social Sciences</a> bachelor at the University of
@@ -892,9 +1012,9 @@ social impact.
 </p>
 </div>
 </div>
-<div id="outline-container-orge843868" class="outline-3">
-<h3 id="orge843868">[MAY 2021 - JUN 2022] Junior Lecturer - Athena Studies</h3>
-<div class="outline-text-3" id="text-orge843868">
+<div id="outline-container-org29b1c86" class="outline-3">
+<h3 id="org29b1c86">[MAY 2021 - JUN 2022] Junior Lecturer - Athena Studies</h3>
+<div class="outline-text-3" id="text-org29b1c86">
 <p>
 <a href="https://athenastudies.co.uk/">Athena Studies</a> is the number one company offering study assistance to
 university students in the Netherlands. I was in charge of different
@@ -905,9 +1025,9 @@ enough for my boss' boss to <a href="documents/india_letter.pdf">congratulate</a
 </p>
 </div>
 </div>
-<div id="outline-container-orgd7a7272" class="outline-3">
-<h3 id="orgd7a7272">[FEB 2020 - NOV 2021] Editor - Spiegeloog</h3>
-<div class="outline-text-3" id="text-orgd7a7272">
+<div id="outline-container-org6c88f1b" class="outline-3">
+<h3 id="org6c88f1b">[FEB 2020 - NOV 2021] Editor - Spiegeloog</h3>
+<div class="outline-text-3" id="text-org6c88f1b">
 <p>
 During the my first years in university I was an editor for the
 Psychology faculty's magazine. There I wrote a few articles and
@@ -917,13 +1037,29 @@ over journalism, but you can still <a href="https://www.spiegeloog.amsterdam/aut
 </div>
 </div>
 </div>
-<div id="outline-container-orga877283" class="outline-2">
-<h2 id="orga877283">Academic career</h2>
-<div class="outline-text-2" id="text-orga877283">
+<div id="outline-container-org5d2139a" class="outline-2">
+<h2 id="org5d2139a">Academic career</h2>
+<div class="outline-text-2" id="text-org5d2139a">
 </div>
-<div id="outline-container-org00cbe8a" class="outline-3">
-<h3 id="org00cbe8a">[SEP 2022 - JAN 2023] Computational Science Minor - University of Amsterdam</h3>
-<div class="outline-text-3" id="text-org00cbe8a">
+<div id="outline-container-org060a8fb" class="outline-3">
+<h3 id="org060a8fb">[SEP 2025 - present] Computer Science Major - Universitat Oberta de Catalunya (UOC)</h3>
+<div class="outline-text-3" id="text-org060a8fb">
+<p>
+After ending my journey at MLP (see <a href="#org941c878">above</a>) and moving back to Spain, I
+indulged. I took the chance to study a field that, as a quantitative
+researcher and professional data scientist, one keeps circling around
+without fully diving into: computer science. I enrolled in a respected, yet
+flexible and online <a href="https://www.uoc.edu/portal/en/estudis_arees/informatica_multimedia_telecomunicacio/index.html">university</a>, and started studying software
+development, electronics, databases and much more. With UOC's
+educational model, I'll be able to continue deepening my understanding
+in this crucial field while adapting the studies to my professional
+career.
+</p>
+</div>
+</div>
+<div id="outline-container-org6124973" class="outline-3">
+<h3 id="org6124973">[SEP 2022 - JAN 2023] Computational Science Minor - University of Amsterdam</h3>
+<div class="outline-text-3" id="text-org6124973">
 <p>
 I finished the minor with a GPA of 8.75/10 (you may check the
 <a href="./documents/transcript_psych.pdf">transcripts</a>👀). The program included courses in programming for data
@@ -932,9 +1068,9 @@ underpinnings of data analysis and statistical methods.
 </p>
 </div>
 </div>
-<div id="outline-container-org784fcb4" class="outline-3">
-<h3 id="org784fcb4">[SEP 2019 - JUN 2022] Psychology Major - University of Amsterdam</h3>
-<div class="outline-text-3" id="text-org784fcb4">
+<div id="outline-container-org285be41" class="outline-3">
+<h3 id="org285be41">[SEP 2019 - JUN 2022] Psychology Major - University of Amsterdam</h3>
+<div class="outline-text-3" id="text-org285be41">
 <p>
 I specialized in Research Methods and Statistics, which filled my
 coursework with scientific data analysis, programming and modeling. I
@@ -948,9 +1084,9 @@ to award me a 9.5/10 and write me a <a href="./documents/han_letter.pdf">recomme
 </p>
 </div>
 </div>
-<div id="outline-container-org5e3ffc7" class="outline-3">
-<h3 id="org5e3ffc7">[SEP 2017 - JUN 2019] International Baccalaureate (IB)</h3>
-<div class="outline-text-3" id="text-org5e3ffc7">
+<div id="outline-container-orgbd2ecc0" class="outline-3">
+<h3 id="orgbd2ecc0">[SEP 2017 - JUN 2019] International Baccalaureate (IB)</h3>
+<div class="outline-text-3" id="text-orgbd2ecc0">
 <p>
 During my high school years, I pursued the International Baccalaureate
 (IB) program, achieving a GPA of 41 out of a possible 45. My courses
